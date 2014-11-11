@@ -57,10 +57,10 @@ strong {
 
 <style>
 .title-slide {
-background-image:url();
+background-image:url(assets/img/HNSCC.jpg);
 background-repeat: no-repeat;
-background-position: 73% 17%;
-background-size: 25%;
+background-position: 0% 15%;
+background-size: 100%;
 background-color: #CBE7A5; /* ; ; */
 }
 </style>
@@ -248,7 +248,7 @@ Number of somatic mutations in representative human cancers.
 
 ***=left
 
-![mutatsioonid](http://www.sciencemag.org/content/339/6127/1546/F1.large.jpg)
+![mutatsioonid](assets/img/somatic.jpg)
 
 ---
 ## Juht-mutatsioonid ja reisija-mutatsioonid
