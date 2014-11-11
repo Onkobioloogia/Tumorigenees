@@ -213,6 +213,12 @@ Number of somatic mutations in representative human cancers.
 
 ![juhid](http://www.sciencemag.org/content/339/6127/1546/F7.medium.gif)
 
+<footer class="source"> Pilt:
+<a href="http://www.sciencemag.org/content/339/6127/1546.full">
+Cancer Genome Landscapes.
+</a>
+</footer>
+
 ---&twocol
 # Mitmeastmelise vähi histopatoloogia: soolevähk
 
