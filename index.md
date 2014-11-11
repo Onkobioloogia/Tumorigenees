@@ -211,7 +211,7 @@ Number of somatic mutations in representative human cancers.
 
 ***=right
 
-![juhid](http://www.sciencemag.org/content/339/6127/1546/F7.medium.gif)
+![juhid](assets/img/landscape.gif)
 
 <footer class="source"> Pilt:
 <a href="http://www.sciencemag.org/content/339/6127/1546.full">
