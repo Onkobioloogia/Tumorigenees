@@ -339,6 +339,46 @@ Wikipedia.
 </footer>
 
 ---
-## Klonaalne evolutsioon
+## Kasvaja geneetiline heterogeensus
+
+- Kasvajasisene geneetiline heterogeensus peamine mehhanism, millel põhineb vähi progressioon ja ravimiresistentsus. 
+- Kaks alternatiivset hüpoteesi heterogeensuse kohta:
+    - klonaalne evolutsioon vähis, 
+    - vähi tüvirakkude hüpotees.
+
+---
+## Topography of cancer subclones
+
+![edel](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f4.2.jpg)
+
+a, Tissue section of prostate to detect genetic events: TMPRSS2–ERG fusion (ERG via rearrangement (ERGR)) and PTEN loss. b, The presumed sequence of clonal events.
+
+<footer class="source"> Allikas:
+<a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
+Clonal evolution in cancer.
+</a>
+</footer>
+
+---
+## Klonaalne evolutsioon vähis
+
+- "Darwinlik" evolutsioonimudel võiks kirjeldada ka muutsi vähirakkude populatsioonis.
+- Vähi ja ümbritseva koe mikrokeskkond tingib selektiivse pressi geneetiliselt heterogeensetele vähikloonidele.
+- Ekspandeeruvad (ja uusi mutatsioone akumuleerivad) ainult need kloonid, millel esinevad antud mikrokeskkonnas jagunemiseks ja ellujäämiseks vajalikud omadused.
 
 ![darwin](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f2.2.jpg)
+
+<footer class="source"> Allikas:
+<a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
+Clonal evolution in cancer.
+</a>
+</footer>
+
+---
+## Vähi tüvirakud
+
+- Vähi tüvirakud on sarnaselt normaalsete tüvirakkudega võimelised genereerima kõiki vähis esinevaid rakutüüpe.
+- Vähi tüvirakud omavad vähis kõrgenenud uuenemispotentsiaali ja tumorigeensust.
+- Vähi tüvirakud on ka draiverid, millel põhineb subkloonide ekspansioon.
+- Ernevates kasvajates on tüvirakke on erineval hulgal ja erineva fenotüübiga.
+- Ainuke tunnus, mis neil peab olema on enese taastootmine (*self renewal*).
