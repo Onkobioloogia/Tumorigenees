@@ -4,4 +4,4 @@ library("slidify")
 
 
 setwd("~/Dropbox/Onkobioloogia/Tumorigenees")
-publish()
+publish("Tumorigenees", "tpall")

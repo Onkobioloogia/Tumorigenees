@@ -193,6 +193,26 @@ Number of somatic mutations in representative human cancers.
 
 ![mutatsioonid](http://www.sciencemag.org/content/339/6127/1546/F1.large.jpg)
 
+---
+## Juht-mutatsioonid ja reisija-mutatsioonid
+
+- Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse "juht" mutatsioonideks (*driver*).
+- Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
+- Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
+
+---&twocol
+## Juhtmutatsioonid
+
+***=left
+
+- Praeguseks on leitud, et eksisteerib umbes [140 geeni](drivers.html) mille mutatsioonid kontributeerivad vähi tekkesse ja arengusse.
+- __*Driver* geenid__ toimivad kümnekonnas signaalirajas ja reguleerivad kolme põhilist rakulist protsessi: **raku diferentseerumine, raku ellujäämine ja genoomi korrashoid**.
+- Iga individuaalne vähk erineb oma geneetiliste muutuste poolest, kuid muutunud signaalirajad on samad.
+
+***=right
+
+![juhid](http://www.sciencemag.org/content/339/6127/1546/F7.medium.gif)
+
 ---&twocol
 # Mitmeastmelise vähi histopatoloogia: soolevähk
 
@@ -219,8 +239,68 @@ Cancer Genome Landscapes.
 </footer>
 
 ---
-## Juht-mutatsioonid ja reisija-mutatsioonid
+## *Field cancerization*, vähiala
 
-- Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse "juht" mutatsioonideks (*driver*).
-- Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
-- Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
+- Mingis piiratud anatoomilises piirkonnas rohkelt tekkivad vähikolded pärinevad samast neoplastilisest alast.
+- 1953, [Slaughter et al.](http://cancerres.aacrjournals.org/external-ref?access_num=13094644&link_type=MED) kasutasid mõistet **vähiala** (*field cancerization*) suuõõne vähi kirjeldamisel.
+- Slaughter et al. tegid suuvähi histoloogilisel analüüsil sellised järeldused:
+    - suuõõne vähk areneb multifokaalsetest vähieelsetest seisunditest,
+    - vähki ümbritseb ebanormaalne kude,
+    - suuõõne vähk koosneb mitmetest sõltumatutest kahjustustest, mis mõnikord on ka kokku kasvanud,
+    - ebanormaalse koe säilimine peale kasvajate eemaldamist võib seletada sekundaarsete primaarsete tuumorite teket ja lokaalset relapsi.
+
+---
+## Vähiala on kirjeldatud erinevates kasvajatüüpides
+
+Vähipaikmed, mille puhul on kirjeldatud vähiala efekt ja kus on jälgitav mitmeastmeline tumorigenees: 
+- **suuõõs, neel**: tubaka tarvitamine 4-10 a. $\to$ düsplastiline suu leukoplakia 5-15 a. $\to$ vähk; 
+- **kops**: 20 kuni 40 paki aastat (1 pakk päevas) $\to$ vähk; 
+- **emakakael**: CIN1 9-13 a. $\to$ CIN3/CIS 10-20 a. $\to$ vähk; 
+- **käärsool**: 15-20 a. $\to$ adenoom 5-15 a. $\to$  vähk; 
+- **rind**: atüüpiline hüperplaasia $\to$ DCIS 6-10 a. $\to$ vähk; 
+- **eesnääre**: 20 a. $\to$ PIN $\ge$10 a. $\to$ latentne vähk 3-15 a. $\to$ vähk. 
+- kusepõis, söögitoru, tupp, nahk;
+
+<footer class="source">CIS, <em>carcinoma in situ</em>; CIN, <em>cervical intraepithelial neoplasia</em>; DCIS, <em>ductal carcinoma in situ</em>; PIN, <em>prostatic intraepithelial neoplasia</em>.
+</footer>
+
+---&twocol
+## Mitmeastmelise kartsenogeneesi mudel, HNSCC
+
+***=left
+
+- Tüvirakk muteerub ja tütarrakkudest moodustub muteerunud rakkude lapike (**patch**).
+- Kahjustatud lapike kasvab ja asendab terves piirkonnas normaalse epiteeli (**field**).
+- Kahjustuse suurenedes tekivad muteerunud subkloonid. 
+- Mõnest divergeerunud kloonist areneb välja invasiivne vähk.
+
+<footer class="source">Allikas:
+<a href="http://cancerres.aacrjournals.org/content/63/8/1727.long#ref-1">
+Braakhuis, 2003
+</a> ja
+<a href="http://www.nature.com/nrc/journal/v11/n1/full/nrc2982.html">
+Leemans, 2011.
+</a>
+</footer>
+
+***=right
+
+<img src="http://www.nature.com/nrc/journal/v11/n1/images/nrc2982-f4.jpg" style="width:500px">
+
+
+---&twocol
+## Vähiala soolevähis
+
+***=right
+
+![wiki](http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg/640px-Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg)
+
+***=left
+
+Lahti lõigatud värskelt opereeritud käärsoole osa milles on kartsinoom ja neli polüüpi. Diagramm näitab võimalikku defektset ala sooles, mis eelneb vähitekkele ja soodustab vähiteket. Diagrammil on värviga näidatud ka vähi sub- ja sub-subkloonid.
+
+<footer class="source"> Allikas:
+<a href="http://en.wikipedia.org/wiki/Carcinogenesis">
+Wikipedia.
+</a>
+</footer>
