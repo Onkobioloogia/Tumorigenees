@@ -194,9 +194,9 @@ Number of somatic mutations in representative human cancers.
 ![mutatsioonid](assets/img/somatic.jpg)
 
 ---
-## Juht-mutatsioonid ja reisija-mutatsioonid
+## Juhtmutatsioonid ja reisijamutatsioonid
 
-- Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse "juht" mutatsioonideks (*driver*).
+- Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse juht- või draivermutatsioonideks (*driver*).
 - Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
 - Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
 
@@ -205,7 +205,7 @@ Number of somatic mutations in representative human cancers.
 
 ***=left
 
-- Praeguseks on leitud, et eksisteerib umbes [140 geeni](drivers.html) mille mutatsioonid kontributeerivad vähi tekkesse ja arengusse.
+- Praeguseks on leitud, et eksisteerib umbes [140 geeni](drivers.html) mille mutatsioonid kontributeerivad olulise osa vähkide tekkesse ja arengusse.
 - __*Driver* geenid__ toimivad kümnekonnas signaalirajas ja reguleerivad kolme põhilist rakulist protsessi: **raku diferentseerumine, raku ellujäämine ja genoomi korrashoid**.
 - Iga individuaalne vähk erineb oma geneetiliste muutuste poolest, kuid muutunud signaalirajad on samad.
 
@@ -337,3 +337,8 @@ Lahti lõigatud värskelt opereeritud käärsoole osa milles on kartsinoom ja ne
 Wikipedia.
 </a>
 </footer>
+
+---
+## Klonaalne evolutsioon
+
+![darwin](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f2.2.jpg)
