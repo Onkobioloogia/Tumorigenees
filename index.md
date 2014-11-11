@@ -229,8 +229,6 @@ Cancer Genome Landscapes.
 - Kõige esimene *"gatekeeping"* mutatsioon annab jagunevale normaalsele epiteelirakule selektiivse eelise.
 - Soolevähis toimuvad sellised *gatekeeping* mutatsioonid **APC** geenis (LOH kr. 5q). 
 
-
-
 ***=right
 
 - Selline adenoom kasvab aeglaselt, kuid **sekundaarne KRAS mutatsioon** põhjustab teise ringi klonaalse ekspansiooni (kasvu). 
@@ -241,6 +239,35 @@ Cancer Genome Landscapes.
 <footer class="source"> Pilt:
 <a href="http://www.sciencemag.org/content/339/6127/1546.full">
 Cancer Genome Landscapes.
+</a>
+</footer>
+
+---
+## Iga vähk on läbinud unikaalse muutuste raja
+
+Geneetiliste muutuste jada, mis viib pahaloomulise vähi tekkeni, pole siiski korrastatult lineaarne ja kindla järjekorraga vaid on pigem igas kasvajas unikaalne.
+
+- Soolevähid küll saavad suure (>80%) tõenäosusega alguse APC geeni mutatsioonidest, kuid edasine areng on stohhastiline.
+- Varieeruvusest annab aimu *driver* geenide mutatsioonisagedused.
+
+![crc2](assets/img/nature11252-f1.2.jpg)
+
+<footer class="source"> Pilt:
+<a href="http://www.nature.com/nature/journal/v487/n7407/full/nature11252.html">
+Comprehensive molecular characterization of human colon and rectal cancer.
+</a>
+</footer>
+
+---
+## Kompleksne klonaalne evolutsioon vähis
+
+Barretti söögitoru (BE) areng kartsinoomiks sisaldab TP53 ja CDKN2A mutatsioone ning rekurentseid LOH-e (5q, 9p, 13q, 17p, 18q).
+
+![BE](http://www.nature.com/ng/journal/v22/n1/images/ng0599_108.gif)
+
+<footer class="source"> Pilt:
+<a href="http://www.nature.com/ng/journal/v22/n1/full/ng0599_106.html">
+Barrett et al., 1999.
 </a>
 </footer>
 
