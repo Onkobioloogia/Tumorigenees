@@ -507,6 +507,25 @@ Seminaalsed katsed 1980.ndatel näitasid, et
 2. **MYC-taolised**: rakutsükli kontrolli *override* tuumas.
 
 ---
+# Kollaboreeruvate onkogeenide näited *in vitro* ja *in vivo*
+
+"ras-sarnane" onkogeen|"myc-sarnane" onkogeen| mudel, rakk, organ
+----------------------|----------------------|-------------
+In vitro transformatsioon | |
+ras|myc|transfekteeritud roti embrüo fibroblastid (REF)
+ras|E1A|transfekteeritud roti neerurakud
+ras|SV40 large T| transfekteeritud REF
+Notch-1|E1A| transfekteeritud roti neerurakud
+In vivo tumorigenees| |
+middle T|large T | polüoomiviirus-indutseeritud hiirekasvajad
+mil(=raf)|myc|MH2 linnu leukeemiaviiruse kana tuumorid
+erbB|erbA|linnu erütroblastoosiviiruse kana tuumorid
+pim1|myc|hiire leukeemiaviirus hiire tuumorid
+abl|myc|hiire leukeemiaviirus hiire tuumorid
+Notch-1/2|myc|tüümuse kasvajad transgeenses hiires
+bcl2|myc|follikulaarsed lümfoomid transgeenses hiires
+
+---
 ## Inimese rakud on transformatsioonile resistentsed
 
 - Erinevalt roti-hiire rakkudest inimese primaarsed rakud koekultuuris spontaanselt ei immortaliseeru.
