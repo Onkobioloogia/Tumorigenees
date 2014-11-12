@@ -78,6 +78,23 @@ library("plyr");library("dplyr")
 --- .segue .dark .nobackground
 ## Recap
 
+---
+## Senesents
+
+- Onkogeen indutseeritud senesents on tuumorsuppressor mehhanism mis toimib healoomulised kasvajates.
+- OI senesentsi käivitavad mitogeenne hüperstimulatsioon (RAS, E2F1) ja on tingitud tekkivatest DNA kahjustustest.
+- Rakkude senesentsi võib põhjustada erinevat tüüpi stress.
+
+![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
+
+---
+## Telomeerid
+
+- Telomeerid on DNA-valk kompleksid, mis stabiliseerivad lineaarsed kromosoomide otsad.
+- Imetajate telomeerid koosnevad 5-15 kb pikkustest TTAGGG kordusjärjestustest, mis lõppevad 3' üheahelalise overhang-iga.
+- Telomeeride pikkus määrab rakkude replikatiivse potentsiaali ja toimib tuumorsuppressor mehhanismina.
+- Telomeeride pikkuse säilitamise eest vastutab telomeeraas või alternative telomere length (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel).
+- 60-80% inimese vähkidest on telomeraas positiivsed.
 
 --- .segue .dark .nobackground
 ## Mitmeastmeline vähiteke
@@ -431,18 +448,27 @@ Clonal evolution in cancer.
 </a>
 </footer>
 
----
+---&twocol
 ## Vähi tüvirakud
 
-Kas vähi arengusse kontributeerivad kõik vähirakud võrdselt või tekivad vähirakud kõrge regeneratiivse potentsiaaliga **vähi tüvirakkudest**  
+Kas vähi arengusse kontributeerivad kõik vähirakud võrdselt või tekivad vähirakud kõrge regeneratiivse potentsiaaliga **vähi tüvirakkudest**.
+
+***=right
 
 - Vähi tüvirakud on vähis olevate rakkude minoorne subpopulatsioon mis on võimelised ennast taastootma ja on tumorigeensed.
-- Vähi tüvirakke on eraldatud erinevatest vähitüüpidest, nagu haematopoieetilised kasvajad, ajukasvajad, käärsoolekasvajad ja rinnakasvajad. 
 - Vähi tüvirakud on rakulised draiverid, millel põhineb subkloonide ekspansioon.
 - Erinevates kasvajates on tüvirakke erineval hulgal ja erineva fenotüübiga.
 - Ainuke tunnus, mis neil peab olema on enese taastootmine (*self renewal*).
 
-<img src="http://www.nature.com/nature/journal/v456/n7222/images/456581a-f1.2.jpg style="width:300px" " >
+***=left
+
+<img src="http://www.nature.com/nature/journal/v414/n6859/images/414105ad.2.jpg" style="width:460px" " >
+
+<footer class="source"> Pilt:
+<a href="http://www.nature.com/nature/journal/v414/n6859/full/414105a0.html">
+Stem cells, cancer, and cancer stem cells.
+</a>
+</footer>
 
 ---&twocol
 ## Normaalsed rakud on transformatsioonile resitentsed
@@ -576,3 +602,30 @@ HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
 Farazi & DePinho, 2006. 
 </a>
 </footer>
+
+---
+# MALT lümfoomid
+
+- MALT: **g**astric **m**ucosa **a**ssociated **l**ymphoid **t**issue.
+- *Helicobacter pylori* nakkus toimib MALT lümfoomides promootorina.
+- 75% MALT lümfoome on võimalik ravida antibiootikumidega.
+- 25% on muutunud promootor-sõltumatuks ja ei vasta enam antibootikumidele. Ilmselt tingituna MALT lümfoomides sagedasele  t(11;18) translokatsioonile, mille tagajärjel tekib fuusion onkovalk API2-MLT MALT1 C-terminusest ja c-IAP2 N-terminusest.
+
+---&twocol
+## Lingid eelmistele loengutele
+
+***=left
+
+- [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
+- [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
+- [Onkoviirused](http://tpall.github.io/Onkoviirused)
+- [Onkogeenid](http://tpall.github.io/Onkogeenid)
+- [Retseptorid](http://tpall.github.io/Retseptorid)
+- [Signaalirajad](http://tpall.github.io/Signaalirajad)
+- [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
+- [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
+- [p53 ja apoptoos](http://tpall.github.io/p53-ja-apoptoos)
+
+***=right
+
+- [Immortalisatsioon](http://tpall.github.io/Immortalisatsioon)
