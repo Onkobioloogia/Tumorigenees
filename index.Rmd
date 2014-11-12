@@ -88,12 +88,13 @@ library("plyr");library("dplyr")
 ![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
 
 ---
-## Telomeerid
+## Telomeerid ja immortalisatsioon
 
 - Telomeerid on DNA-valk kompleksid, mis stabiliseerivad lineaarsed kromosoomide otsad.
 - Imetajate telomeerid koosnevad 5-15 kb pikkustest TTAGGG kordusjärjestustest, mis lõppevad 3' üheahelalise overhang-iga.
 - Telomeeride pikkus määrab rakkude replikatiivse potentsiaali ja toimib tuumorsuppressor mehhanismina.
-- Telomeeride pikkuse säilitamise eest vastutab telomeeraas või alternative telomere length (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel).
+- Telomeeride pikkuse säilitamise eest vastutab telomeeraas (TERT) või alternative telomere length (ALT) korrastus-mehhanism, mis põhineb rekombinatsioonil (>10% vähirakkudel).
+- Rakkude immortaliseerimiseks on neis vaja aktiveerida telomeraas.
 - 60-80% inimese vähkidest on telomeraas positiivsed.
 
 --- .segue .dark .nobackground
