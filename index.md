@@ -377,8 +377,95 @@ Clonal evolution in cancer.
 ---
 ## Vähi tüvirakud
 
-- Vähi tüvirakud on sarnaselt normaalsete tüvirakkudega võimelised genereerima kõiki vähis esinevaid rakutüüpe.
-- Vähi tüvirakud omavad vähis kõrgenenud uuenemispotentsiaali ja tumorigeensust.
-- Vähi tüvirakud on ka draiverid, millel põhineb subkloonide ekspansioon.
-- Ernevates kasvajates on tüvirakke on erineval hulgal ja erineva fenotüübiga.
+Kas vähi arengusse kontributeerivad kõik vähirakud võrdselt või tekivad vähirakud kõrge regeneratiivse potentsiaaliga **vähi tüvirakkudest**  
+
+- Vähi tüvirakud on vähis olevate rakkude minoorne subpopulatsioon mis on võimelised ennast taastootma ja on tumorigeensed.
+- Vähi tüvirakke on eraldatud erinevatest vähitüüpidest, nagu haematopoieetilised kasvajad, ajukasvajad, käärsoolekasvajad ja rinnakasvajad. 
+- Vähi tüvirakud on rakulised draiverid, millel põhineb subkloonide ekspansioon.
+- Erinevates kasvajates on tüvirakke erineval hulgal ja erineva fenotüübiga.
 - Ainuke tunnus, mis neil peab olema on enese taastootmine (*self renewal*).
+
+<img src="http://www.nature.com/nature/journal/v456/n7222/images/456581a-f1.2.jpg style="width:300px" " >
+
+---&twocol
+## Normaalsed rakud on transformatsioonile resitentsed
+
+***=right
+
+- Immortaliseeritud NIH3T3 rakud transformeerusid H-ras onkogeeniga transfekteerimisel st. piisas justkui ühest aktiveeritud onkogeenist.
+- Tõeliselt primaarsed rakud mis on eraldatud hiirest ja rotist *ras*-i sisse viimisel ei transformeeru.
+- K-ras-i koespetsiifiline ekspressioon hiire sooleepiteelis põhjustab ainult sooleepiteeli muutumise hüperplastiliseks (kõrval olev pilt).
+
+***=left
+
+<img src="http://www.nature.com/ng/journal/v40/n5/images/ng.115-F1.jpg" style="width:400px" >
+
+<p style="font-size:10pt">Mutant K-Ras, but not mutant N-Ras, promotes hyperplastic growth in the colonic epithelium.</p>
+
+<footer class="source"> Pilt:
+<a href="http://www.nature.com/ng/journal/v40/n5/full/ng.115.html">
+Haigis et al., 2008.
+</a>
+</footer>
+
+---
+## Transformatsiooniks on vaja vähemalt kahte mutantset geeni
+
+Seminaalsed katsed 1980.ndatel näitasid, et
+- Polüoomiviiruse onkogeenid *large T* ja *middle T* olid siiski võimelised hiire primaarseid rakke immortaliseerima (LT) ja transformeerima (MT).
+- Roti embrüo fibroblastid transformeerusid ainult *myc* ja *ras* koostransfekteerimisel, mitte aga kummagagi eraldi.
+- Inimese promüelotsüütses leukeemias oli olemas nii aktiveeritud N-ras kui *myc*.
+
+---
+## Kollaboreeruvad onkogeenid kuuluvad kahte klassi
+
+1. **RAS-taolised**: tsütoplasma mitogeenne stimulatsioon.
+2. **MYC-taolised**: rakutsükli kontrolli *override* tuumas.
+
+---
+## Inimese rakud on transformatsioonile resistentsed
+
+- Erinevalt roti-hiire rakkudest inimese primaarsed rakud koekultuuris spontaanselt ei immortaliseeru.
+- Samuti ei transformeeru inimese rakud lihtsalt kahe onkogeeni sisse viimisel, lisaks on vaja inaktiveerida ka p53 ja pRB (nt. SV40 large T ja small t abil).
+
+Rada | Geen/agent
+-----|----------
+Ras | ras
+pRb | CDK4/6-D1, SV40 LT, HPV E7
+p53 | DNp53, SV40 LT, HPV E6
+telomeerid | hTERT, myc+SV40 LT
+PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
+
+- Inimese primaarsete fibroblastide transformeerumine kultuuris saavutati (1)  telomeraasi üle-ekspresiooni, (2) RAS-, (3) MYC-ekspressiooni ja (4) p16INK4a vaigistamise teel ([Drayton et al., 2003](http://www.sciencedirect.com/science/article/pii/S1535610803002423)).
+
+---
+## Transformatsiooni resistentsus on tingitud mitooside arvust
+
+- Põhjus miks inimese ja teiste pikaealiste imetajate rakud on evolutsiooniliselt kujunenud resistentsemaks transformatsioonile tuleneb ilmselt ka sellest, et kui hiire rakud läbivad summaarselt $10^{11}$ mitoosi elu jooksul, siis inimese rakud teevad läbi $10^{16}$ mitoosi.
+
+![whale](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwLE4iqmvZ3mKz8b2zVP0S-qV9buPy06NnmEI_tmqLy7ekRqwN)
+
+---
+## Vähitekke tempo lähtub mutatsioonikiirusest
+
+- Vähitekke kiiruse määrab stohhastiliste mutatsioonide akumuleerumine, mida võib oluliselt kiirendada ekspositsioon **välistele mutageenidele**.
+- Ka kopsuvähi intsidents sõltub pigem suitsetamise staazist (nn. **paki aastad**) kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
+
+<img src="http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg" style="width:420px">
+
+---&twocol
+## Vähiteke ja mittemutageensed promootorid
+
+***=right
+
+- Hiire nahavähi tekkeks ei piisa ainult mutageeni (**DMBA**) pintseldamisest nahale.
+- Samuti ei piisa nahavähi (papilloomide) tekkeks ainult põletikulise toimega **TPA/PMA** pintseldamisest.
+- Mittepüsivad papilloomid tekivad hiire nahale alles siis kui kõigepealt pintseldatakse DMBA-ga ja seejärel mitmekordselt TPA-ga.
+- Kui püsivaid papilloome pintseldati veelkord DMBA-ga (teistkordne mutagenees) arenes välja kartsinoom.
+
+***=left
+
+<img src="http://cancerres.aacrjournals.org/content/60/3/595/F5.large.jpg" style="width:440px" >
+
+<footer class="source">DMBA, dimetüülbenz[a]antratseen; TPA, 12-O-Tetradecanoylphorbol-13-acetate (PMA, phorbol 12-myristate 13-acetate). TPA toimib diatsüülglütserooli (DAG) analoogina ja aktiveerib PKC-d.
+</footer>
