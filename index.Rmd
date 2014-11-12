@@ -541,7 +541,7 @@ Reddig et al., 2000.
 - Rakud mis limaskesta regenereerudes jagunevad võivad juba kanda suitsetamisest tingitud mutatsioone.
 
 ---
-## Rinnavähk - promootoriks on kehaomane hormoon
+# Rinnavähk - promootoriks on kehaomane hormoon
 
 - Menstruaaltsüklis toimuvad hormonaalsed muutused, millega kaasneb ka rinnanäärme rakkude jagunemine.
 - Epidemioloogiliselt on leitud, et mida rohkem tsükleid naine elu jooksul läbib, seda kõrgem on rinnavähi risk.
@@ -560,7 +560,6 @@ HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb
 ***=left
 
 - HBV valk HBx on küll hiires tumorigeenne (HCC tekib 13 kuu pärast, myc+HBx HCC 6 kuu pärast). 
-- Kuid HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
 - HBV nakkus on sünergiline *Aspergillus* e aflatoksiin B1-ga. Aflatoksiin on tugevalt mutageenne.
 - HBV nakkus tõstab HCC riski 7 korda.
 - Aflatoksiini sisaldava toidu söömine tõstab riski 3 korda.
@@ -568,5 +567,12 @@ HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb
 
 ***=right
 
+HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
+
 <img src="http://www.nature.com/nrc/journal/v6/n9/images/nrc1934-f2.jpg" style="width:400px">
 
+<footer class="source">Pilt: 
+<a href="http://www.nature.com/nrc/journal/v6/n9/full/nrc1934.html">
+Farazi & DePinho, 2006. 
+</a>
+</footer>
