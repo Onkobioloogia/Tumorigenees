@@ -467,5 +467,49 @@ PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
 
 <img src="http://cancerres.aacrjournals.org/content/60/3/595/F5.large.jpg" style="width:440px" >
 
-<footer class="source">DMBA, dimetüülbenz[a]antratseen; TPA, 12-O-Tetradecanoylphorbol-13-acetate (PMA, phorbol 12-myristate 13-acetate). TPA toimib diatsüülglütserooli (DAG) analoogina ja aktiveerib PKC-d.
+<footer class="source">
+DMBA, 7,12-dimetüülbenz[a]antratseen; TPA, 12-O-tetradekanoüülforbool-13-atsetaat (PMA, phorbol 12-müristaat 13-atsetaat). TPA toimib diatsüülglütserooli (DAG) analoogina ja aktiveerib PKC erinevaid isovorme.
+Pilt: 
+<a href="http://cancerres.aacrjournals.org/content/60/3/595.full">
+Reddig et al., 2000. 
+</a>
 </footer>
+
+---
+## Inimese kasvajates on mittemutageenseteks promootoriteks mitogeenid ja põletik
+
+- 75% pea-kaela (suu-neelu) kasvajatest inimesel tekivad suitsetamise (mutageen) ja alkoholi (promootor) koostoimest.
+- Sigaretisuits toimib mutageenina.
+- Alkohol põhjustab suu limaskesta rakkude kiirenenud irdumist, mis paneb muidu suhteliselt aeglaselt jagunevad limaskesta tüvirakud samuti kiirenenud tempos jagunema.
+- Rakud mis limaskesta regenereerudes jagunevad võivad juba kanda suitsetamisest tingitud mutatsioone.
+
+---
+## Rinnavähk - promootoriks on kehaomane hormoon
+
+- Menstruaaltsüklis toimuvad hormonaalsed muutused, millega kaasneb ka rinnanäärme rakkude jagunemine.
+- Epidemioloogiliselt on leitud, et mida rohkem tsükleid naine elu jooksul läbib, seda kõrgem on rinnavähi risk.
+- Naistel kellel saabub menopaus 45 aastaselt on poole väiksem rinnavähi risk kui neil kel menopaus saabub 55+ eluaastast.
+- Munasarjade eemaldamine vähendab rinnavähi riski nulli.
+- Taanis, mitte-Hodgkinsi lümfoomi nais patsientidel, kel saabus kemoteraapiast tingitud menopaus enne 36 eluaastat langes rinnavähi risk 90%.
+- Teisalt, post-menopaussetel naistel kellel tekib rinnavähk on veres keskmiselt 15% kõrgem östrogeeni tase.
+
+<img src="http://www.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/@clinicalspec/documents/image/mdaw/mtcy/~edisp/menstrual_cycle_ca6-00024543/~renditions/menstrual_cycle_ca6-00024543~9.jpg" style="width:150px">
+
+---&twocol
+# Kroonilised põletikud: HBV ja maksvähk
+
+HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb iga aasta ~500,000 inimest sellesse haigusesse.
+
+***=left
+
+- HBV valk HBx on küll hiires tumorigeenne (HCC tekib 13 kuu pärast, myc+HBx HCC 6 kuu pärast). 
+- Kuid HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
+- HBV nakkus on sünergiline *Aspergillus* e aflatoksiin B1-ga. Aflatoksiin on tugevalt mutageenne.
+- HBV nakkus tõstab HCC riski 7 korda.
+- Aflatoksiini sisaldava toidu söömine tõstab riski 3 korda.
+- Mõlema koostoimes tõuseb HCC risk 60 korda!
+
+***=right
+
+<img src="http://www.nature.com/nrc/journal/v6/n9/images/nrc1934-f2.jpg" style="width:400px">
+
