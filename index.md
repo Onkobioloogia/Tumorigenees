@@ -574,10 +574,13 @@ Farazi & DePinho, 2006.
 - 75% MALT lümfoome on võimalik ravida antibiootikumidega.
 - 25% on muutunud promootor-sõltumatuks ja ei vasta enam antibootikumidele. Ilmselt tingituna MALT lümfoomides sagedasele  t(11;18) translokatsioonile, mille tagajärjel tekib fuusion onkovalk API2-MLT MALT1 C-terminusest ja c-IAP2 N-terminusest.
 
----&twocol
-## Lingid eelmistele loengutele
+--- .segue .dark .nobackground
 
-***=left
+## Lingid teistele loengutele
+
+--- &twocol 
+
+***=left 
 
 - [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
 - [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
@@ -587,8 +590,15 @@ Farazi & DePinho, 2006.
 - [Signaalirajad](http://tpall.github.io/Signaalirajad)
 - [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
+
+
+***=right 
+
 - [p53 ja apoptoos](http://tpall.github.io/p53-ja-apoptoos)
-
-***=right
-
 - [Immortalisatsioon](http://tpall.github.io/Immortalisatsioon)
+- [Tumorigenees](http://tpall.github.io/Tumorigenees)
+- [Genoomiterviklikkus](http://tpall.github.io/Genoomiterviklikkus)
+- [Mikrokeskkond](http://tpall.github.io/Mikrokeskkond)
+- [Metastaasid](http://tpall.github.io/Metastaas)
+- [Immuunsus](http://tpall.github.io/Immuunsus)
+- [Vähiravimid](http://tpall.github.io/Vahiravim)

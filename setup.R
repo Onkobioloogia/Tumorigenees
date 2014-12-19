@@ -4,4 +4,6 @@ library("slidify")
 
 
 setwd("~/Dropbox/Onkobioloogia/Tumorigenees")
+slidify("index.Rmd")
+browseURL("index.html")
 publish("Tumorigenees", "tpall")
