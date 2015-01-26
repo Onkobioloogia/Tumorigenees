@@ -180,7 +180,7 @@ Tobacco and the global lung cancer epidemic.
 
 ***=right
 
-```{r globocan, echo=FALSE, message=FALSE,results='asis'}
+```{r globocan, echo=FALSE, message=FALSE, results='asis'}
 eurorate <- read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/eurorate")
 fits <- eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>2&!variable=="Hodgkin.s.lümfoom") %>%
   dlply(., "variable", function(x) lm(log(value) ~ log(Vanusegrupp), data=x))
@@ -232,7 +232,7 @@ GLOBOCAN 2012, IARC - 10.11.2014.
 read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/eurorate") %>% 
   melt(.,id="Vanusegrupp") %>% filter(value>2&variable=="Sool") %>%
 ggplot(., aes(x = Vanusegrupp, y = value) ) + geom_line(size=2) + xlim(0, 80) + 
-  xlab("Vanus, aastates") + ylab("Surmasid 100,000 kohta") + ggtitle("Soolevähk")
+  xlab("Vanus, aastates") + ylab("Surmasid 100000 inimese kohta") + ggtitle("Soolevähk")
 ```
 
 ---
