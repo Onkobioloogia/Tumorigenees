@@ -599,7 +599,7 @@ Reddig et al., 2000.
 <img src="http://www.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/@clinicalspec/documents/image/mdaw/mtcy/~edisp/menstrual_cycle_ca6-00024543/~renditions/menstrual_cycle_ca6-00024543~9.jpg" style="width:150px">
 
 ---&twocol
-# Kroonilised põletikud: HBV ja maksvähk
+# Kroonilised põletikud: HBV ja maksavähk
 
 HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb iga aasta ~500,000 inimest sellesse haigusesse.
 
