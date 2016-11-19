@@ -71,7 +71,8 @@ library("magrittr")
 library("reshape2")
 library("ggplot2")
 library("ggthemes")
-library("plyr");library("dplyr")
+library("plyr"); library("dplyr")
+library("broom")
 ```
 
 
@@ -181,8 +182,9 @@ Tobacco and the global lung cancer epidemic.
 ***=right
 
 ```{r globocan, echo=FALSE, message=FALSE, results='asis'}
-eurorate <- read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/eurorate")
-fits <- eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>2&!variable=="Hodgkin.s.lümfoom") %>%
+eurorate <- read.csv("eurorate.csv") %>% melt(.,id="Vanusegrupp")
+fits <- eurorate %>% 
+  filter(value > 2 & !variable == "Hodgkin.s.lümfoom") %>%
   dlply(., "variable", function(x) lm(log(value) ~ log(Vanusegrupp), data=x))
 sval <- ldply(fits,  function(x) coef(x)[2])
 pval <- ldply(fits,  function(x) anova(x)$`Pr(>F)`[1])
@@ -195,7 +197,7 @@ yval<-eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>0) %>%
   ddply(., "variable", summarise, ycord=max(value))
 ds_out <- join(ds_out, yval)
 eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>2&!variable=="Hodgkin.s.lümfoom")  %>%
-ggplot(.,aes(x=Vanusegrupp, y=value)) + geom_point(aes(group=variable)) + 
+  ggplot(.,aes(x=Vanusegrupp, y=value)) + geom_point(aes(group=variable)) + 
   facet_wrap(~variable, scales="free_y") + scale_y_log10() + scale_x_log10() + 
   scale_x_continuous(breaks=c(25,50,75)) +
   xlab("Vanus, aastates") + ylab("Surmasid 100000 inimese kohta") +
@@ -367,7 +369,7 @@ Vähipaikmed, mille puhul on kirjeldatud vähiala efekt ja kus on jälgitav mitm
 - **käärsool**: 15-20 a. $\to$ adenoom 5-15 a. $\to$  vähk; 
 - **rind**: atüüpiline hüperplaasia $\to$ DCIS 6-10 a. $\to$ vähk; 
 - **eesnääre**: 20 a. $\to$ PIN $\ge$10 a. $\to$ latentne vähk 3-15 a. $\to$ vähk. 
-- kusepõis, söögitoru, tupp, nahk;
+- kusepõis, söögitoru, vagiina, nahk;
 
 <footer class="source">CIS, <em>carcinoma in situ</em>; CIN, <em>cervical intraepithelial neoplasia</em>; DCIS, <em>ductal carcinoma in situ</em>; PIN, <em>prostatic intraepithelial neoplasia</em>.
 </footer>
@@ -639,15 +641,12 @@ Farazi & DePinho, 2006.
 
 ***=left 
 
-- [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
-- [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
-- [Onkoviirused](http://tpall.github.io/Onkoviirused)
-- [Onkogeenid](http://tpall.github.io/Onkogeenid)
+- [Sissejuhatav loeng](http://tpall.github.io/onkobioloogia)
+- [Viirused ja onkogeenid](http://tpall.github.io/viirused-ja-onkogeenid)
 - [Retseptorid](http://tpall.github.io/Retseptorid)
 - [Signaalirajad](http://tpall.github.io/Signaalirajad)
 - [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
-
 
 ***=right 
 

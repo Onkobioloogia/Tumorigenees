@@ -109,11 +109,11 @@ background-color: #CBE7A5; /* ; ; */
 
 ***=left
 
-![plot of chunk uk](assets/fig/uk-1.png) 
+![plot of chunk uk](assets/fig/uk-1.png)
 
 ***=right
 
-![plot of chunk seer](assets/fig/seer-1.png) 
+![plot of chunk seer](assets/fig/seer-1.png)
 
 
 <footer class="source"> Andmed: Vasakul, 
@@ -151,7 +151,7 @@ Tobacco and the global lung cancer epidemic.
 
 ***=right
 
-![plot of chunk globocan](assets/fig/globocan-1.png) 
+![plot of chunk globocan](assets/fig/globocan-1.png)
 
 ***=left
 
@@ -176,7 +176,7 @@ GLOBOCAN 2012, IARC - 10.11.2014.
 - Siit nähtub, et **koos vanusega tekib meisse kõigisse paratamatult ka rakke, mis on juba läbinud mingi arvu (kuid mitte kõiki!) vähi tekkeni viivaid astmeid**.
 
 
-![plot of chunk sool](assets/fig/sool-1.png) 
+![plot of chunk sool](assets/fig/sool-1.png)
 
 ---
 ## Osa vähke ei sõltu vanusest
@@ -310,7 +310,7 @@ Vähipaikmed, mille puhul on kirjeldatud vähiala efekt ja kus on jälgitav mitm
 - **käärsool**: 15-20 a. $\to$ adenoom 5-15 a. $\to$  vähk; 
 - **rind**: atüüpiline hüperplaasia $\to$ DCIS 6-10 a. $\to$ vähk; 
 - **eesnääre**: 20 a. $\to$ PIN $\ge$10 a. $\to$ latentne vähk 3-15 a. $\to$ vähk. 
-- kusepõis, söögitoru, tupp, nahk;
+- kusepõis, söögitoru, vagiina, nahk;
 
 <footer class="source">CIS, <em>carcinoma in situ</em>; CIN, <em>cervical intraepithelial neoplasia</em>; DCIS, <em>ductal carcinoma in situ</em>; PIN, <em>prostatic intraepithelial neoplasia</em>.
 </footer>
@@ -582,15 +582,12 @@ Farazi & DePinho, 2006.
 
 ***=left 
 
-- [Sissejuhatav loeng](http://rpubs.com/tapa741/sissejuhatus)
-- [Vähitüübid](http://rpubs.com/tapa741/vahityybid)
-- [Onkoviirused](http://tpall.github.io/Onkoviirused)
-- [Onkogeenid](http://tpall.github.io/Onkogeenid)
+- [Sissejuhatav loeng](http://tpall.github.io/onkobioloogia)
+- [Viirused ja onkogeenid](http://tpall.github.io/viirused-ja-onkogeenid)
 - [Retseptorid](http://tpall.github.io/Retseptorid)
 - [Signaalirajad](http://tpall.github.io/Signaalirajad)
 - [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
-
 
 ***=right 
 
