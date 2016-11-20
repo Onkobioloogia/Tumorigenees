@@ -73,6 +73,8 @@ library("ggplot2")
 library("ggthemes")
 library("plyr"); library("dplyr")
 library("broom")
+library(purrr)
+library(tidyr)
 ```
 
 
@@ -182,37 +184,33 @@ Tobacco and the global lung cancer epidemic.
 ***=right
 
 ```{r globocan, echo=FALSE, message=FALSE, results='asis'}
-eurorate <- read.csv("eurorate.csv") %>% melt(.,id="Vanusegrupp")
-fits <- eurorate %>% 
-  filter(value > 2 & !variable == "Hodgkin.s.lümfoom") %>%
-  dlply(., "variable", function(x) lm(log(value) ~ log(Vanusegrupp), data=x))
-sval <- ldply(fits,  function(x) coef(x)[2])
-pval <- ldply(fits,  function(x) anova(x)$`Pr(>F)`[1])
-ds_out <- join(sval, pval)
-colnames(ds_out)<-c("variable","Slope","p.value")
-# Add two columns of strings to use in the faceted plots
-ds_out$slab <- sprintf('Tõus: %2.1f', ds_out$Slope)
-ds_out$plab <- sprintf('p-val: %1.6f', ds_out$p.value)
-yval<-eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>0) %>%
-  ddply(., "variable", summarise, ycord=max(value))
-ds_out <- join(ds_out, yval)
-eurorate %>% melt(.,id="Vanusegrupp") %>% filter(value>2&!variable=="Hodgkin.s.lümfoom")  %>%
-  ggplot(.,aes(x=Vanusegrupp, y=value)) + geom_point(aes(group=variable)) + 
-  facet_wrap(~variable, scales="free_y") + scale_y_log10() + scale_x_log10() + 
-  scale_x_continuous(breaks=c(25,50,75)) +
-  xlab("Vanus, aastates") + ylab("Surmasid 100000 inimese kohta") +
-  geom_smooth(method = "lm", se=FALSE, formula = y ~ x, size=1) +
-  scale_color_colorblind() +
-  geom_text(data = ds_out, aes(x = 3, y = (ycord*0.6), label = slab),size = 4,hjust = 0) +
+eurorate <- read.csv("eurorate.csv") %>% 
+  melt(.,id="Vanusegrupp") %>% 
+  filter(value > 2 & !variable == "Hodgkin.s.lümfoom")
+cancers <- eurorate  %>%
+  group_by(variable) %>%
+  nest %>% 
+  mutate(model = map(data, ~lm(log(value) ~ log(Vanusegrupp), data = .)),
+         slope = map_dbl(model, function(x) coef(x)[2]),
+         y = map_dbl(data, function(x) max(x$value)/2))
+ggplot(eurorate, aes(x = Vanusegrupp, y = value)) + 
+  geom_point() + 
+  facet_wrap(~ variable, scales = "free_y") + 
+  scale_y_log10() + scale_x_log10() + 
+  scale_x_continuous(breaks = c(25, 50, 75)) +
+  geom_smooth(method = "lm", se = FALSE) +
+  geom_text(data = cancers, aes(x = 25, y = y, label = sprintf('%2.1f', slope)), size = 4, hjust = 0) +
+  xlab("Vanus, aastat") + 
+  ylab("Surmasid 100000 inimese kohta") +
   ggtitle("WHO EUROPE REGION (EURO) - \nBOTH SEXES ESTIMATED INCIDENCE BY AGE")
 ```
 
 ***=left
 
-- Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega (a) kus a on vahemikus $a^4$ kuni $a^7$, $\lambda(a)=k \times a^{m-1}$.
-- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust (*m*) suhteliselt sarnaste ajaliste vahedega.
-- Keskmine tõus (*m-1* või *n*) kõrvalolevate andmete põhjal on **`r sprintf('%2.1f', mean(ds_out$Slope[2:19]))`** (vahemik: *`r sprintf('%2.1f', range(ds_out$Slope[2:19]))`*).
-- Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5+1 = **6 sõltumatut sündmust**. 
+- Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega.
+- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
+- Keskmine tõus kõrvalolevate andmete põhjal on **`r sprintf('%2.1f', mean(cancers$slope))`** (vahemik: *`r sprintf('%2.1f', range(cancers$slope))`*).
+- Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5 + 1 = **6 sõltumatut sündmust**. 
 
 
 <footer class="source"> Andmed:

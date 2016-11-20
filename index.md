@@ -155,10 +155,10 @@ Tobacco and the global lung cancer epidemic.
 
 ***=left
 
-- Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega (a) kus a on vahemikus $a^4$ kuni $a^7$, $\lambda(a)=k \times a^{m-1}$.
-- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust (*m*) suhteliselt sarnaste ajaliste vahedega.
-- Keskmine tõus (*m-1* või *n*) kõrvalolevate andmete põhjal on **5.4** (vahemik: *1.6, 8.0*).
-- Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5+1 = **6 sõltumatut sündmust**. 
+- Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega.
+- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
+- Keskmine tõus kõrvalolevate andmete põhjal on **5.3** (vahemik: *1.6, 8.0*).
+- Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5 + 1 = **6 sõltumatut sündmust**. 
 
 
 <footer class="source"> Andmed:
