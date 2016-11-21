@@ -157,7 +157,8 @@ Tobacco and the global lung cancer epidemic.
 
 - Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega.
 - Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
-- Keskmine tõus kõrvalolevate andmete põhjal on **5.3** (vahemik: *1.6, 8.0*).
+- Selline eksponentsiaalne seos muutujate vahel on Log-log plotil lineaarne. 
+- Keskmine tõus vähi suremuses kui vanus kasvab ühe ühiku kõrvalolevate andmete põhjal on **4.9**.
 - Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5 + 1 = **6 sõltumatut sündmust**. 
 
 
@@ -168,7 +169,7 @@ GLOBOCAN 2012, IARC - 10.11.2014.
 </footer>
 
 ---&twocol
-## Tee vähini võtab tavaliselt palju aega
+## Tee vähi suunas toimub läbi elu
 
 - Soolevähi intsidents tõuseb tugevalt seitsmendal ja kaheksandal eludekaadil.
 - Seega, iga samm või sündmus vähi suunas toimub kord **5 kuni 10 aasta** jooksul.
@@ -197,6 +198,7 @@ Cancer epidemiology in the last century and the next decade.
 
 ***=right
 
+- **Välistest mutageenidest tingitud kasvajad sisaldavad rohkem mutatsioone.**
 - Ülal, mittesünonüümsete mutatsioonide arv tuumori kohta eri paikmetes täiskasvanute ja pediaatriliste vähkide täisgenoomi sekvenerimise andmetel. 
 - All, mittesünonüümsete mutatsioonide mediaan erinevates vähitüüpides. Vurrud näitavad diagrammil 25 ja 75% kvartiile. 
 
@@ -214,7 +216,7 @@ Number of somatic mutations in representative human cancers.
 ---
 ## Juhtmutatsioonid ja reisijamutatsioonid
 
-- Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse juht- või draivermutatsioonideks (*driver*).
+- **Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse juht- või draivermutatsioonideks (*driver*).**
 - Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
 - Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
 
