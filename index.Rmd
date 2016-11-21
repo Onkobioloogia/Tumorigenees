@@ -565,6 +565,15 @@ PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
 
 <img src="http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg" style="width:420px">
 
+
+---
+## Hiire naha kartsinogenees
+
+![mouse skin carcinogenesis](assets/img/mouse_skin_model.png)
+
+<footer class="source">Pildid: Wikipedia, Nature Medicine.
+</footer>
+
 ---&twocol
 ## Vähiteke ja mittemutageensed promootorid
 
@@ -587,9 +596,6 @@ Reddig et al., 2000.
 </a>
 </footer>
 
----
-
-![](assets/img/mouse_skin_model.png)
 
 ---
 ## Inimese kasvajates on mittemutageenseteks promootoriteks mitogeenid ja põletik
