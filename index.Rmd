@@ -319,6 +319,30 @@ Cancer Genome Landscapes.
 </a>
 </footer>
 
+---&twocol
+## Mitmeastmelise kartsenogeneesi mudel, HNSCC
+
+***=left
+
+- Tüvirakk muteerub ja tütarrakkudest moodustub muteerunud rakkude lapike (**patch**).
+- Kahjustatud lapike kasvab ja asendab terves piirkonnas normaalse epiteeli (**field**).
+- Kahjustuse suurenedes tekivad muteerunud subkloonid. 
+- Mõnest divergeerunud kloonist areneb välja invasiivne vähk.
+
+<footer class="source">Allikas:
+<a href="http://cancerres.aacrjournals.org/content/63/8/1727.long#ref-1">
+Braakhuis, 2003
+</a> ja
+<a href="http://www.nature.com/nrc/journal/v11/n1/full/nrc2982.html">
+Leemans, 2011.
+</a>
+</footer>
+
+***=right
+
+<img src="http://www.nature.com/nrc/journal/v11/n1/images/nrc2982-f4.jpg" style="width:500px">
+
+
 ---
 ## Iga vähk on läbinud unikaalse muutuste raja
 
@@ -375,30 +399,6 @@ Vähipaikmed, mille puhul on kirjeldatud vähiala efekt ja kus on jälgitav mitm
 </footer>
 
 ---&twocol
-## Mitmeastmelise kartsenogeneesi mudel, HNSCC
-
-***=left
-
-- Tüvirakk muteerub ja tütarrakkudest moodustub muteerunud rakkude lapike (**patch**).
-- Kahjustatud lapike kasvab ja asendab terves piirkonnas normaalse epiteeli (**field**).
-- Kahjustuse suurenedes tekivad muteerunud subkloonid. 
-- Mõnest divergeerunud kloonist areneb välja invasiivne vähk.
-
-<footer class="source">Allikas:
-<a href="http://cancerres.aacrjournals.org/content/63/8/1727.long#ref-1">
-Braakhuis, 2003
-</a> ja
-<a href="http://www.nature.com/nrc/journal/v11/n1/full/nrc2982.html">
-Leemans, 2011.
-</a>
-</footer>
-
-***=right
-
-<img src="http://www.nature.com/nrc/journal/v11/n1/images/nrc2982-f4.jpg" style="width:500px">
-
-
----&twocol
 ## Vähiala soolevähis
 
 ***=right
@@ -429,12 +429,19 @@ Wikipedia.
 ![edel](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f4.2.jpg)
 
 a, Tissue section of prostate to detect genetic events: TMPRSS2–ERG fusion (ERG via rearrangement (ERGR)) and PTEN loss. b, The presumed sequence of clonal events.
+Edel, TMPRSS2–ERG fusion by deletion or split (Esplit). TMPRSS2–ERG fusion by deletion of genomic sequences between the tandemly located TMPRSS2 and ERG gene sequences on chromosome 21. Duplication of the fusion of TMPRSS2 to ERG sequences together with interstitial deletion of sequences 5′ to ERG (called ‘2+Edel’).
+
 
 <footer class="source"> Allikas:
 <a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
 Clonal evolution in cancer.
 </a>
 </footer>
+
+---
+## Vähi subkloonid
+
+![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
 
 ---
 ## Klonaalne evolutsioon vähis
