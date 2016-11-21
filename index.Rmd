@@ -588,6 +588,10 @@ Reddig et al., 2000.
 </footer>
 
 ---
+
+![](assets/img/mouse_skin_model.png)
+
+---
 ## Inimese kasvajates on mittemutageenseteks promootoriteks mitogeenid ja põletik
 
 - 75% pea-kaela (suu-neelu) kasvajatest inimesel tekivad suitsetamise (mutageen) ja alkoholi (promootor) koostoimest.
