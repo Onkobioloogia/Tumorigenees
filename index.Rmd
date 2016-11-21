@@ -429,13 +429,13 @@ Wikipedia.
 ![edel](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f4.2.jpg)
 
 a, Tissue section of prostate to detect genetic events: TMPRSS2–ERG fusion (ERG via rearrangement (ERGR)) and PTEN loss. b, The presumed sequence of clonal events.
-Edel, TMPRSS2–ERG fusion by deletion or split (Esplit). TMPRSS2–ERG fusion by deletion of genomic sequences between the tandemly located TMPRSS2 and ERG gene sequences on chromosome 21. Duplication of the fusion of TMPRSS2 to ERG sequences together with interstitial deletion of sequences 5′ to ERG (called ‘2+Edel’).
+
 
 
 <footer class="source"> Allikas:
 <a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
 Clonal evolution in cancer.
-</a>
+</a>Edel, TMPRSS2–ERG fusion by deletion or split (Esplit). TMPRSS2–ERG fusion by deletion of genomic sequences between the tandemly located TMPRSS2 and ERG gene sequences on chromosome 21. Duplication of the fusion of TMPRSS2 to ERG sequences together with interstitial deletion of sequences 5′ to ERG (called ‘2+Edel’).
 </footer>
 
 ---
