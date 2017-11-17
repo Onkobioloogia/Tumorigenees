@@ -5,6 +5,7 @@ author: Taavi Päll
 output: xaringan::moon_reader
 ---
 
+background-image: url(http://img2.tfd.com/mk/C/X2604-C-11.eps.png)
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE, message = FALSE, fig.align = 'center', out.width = '80%')
