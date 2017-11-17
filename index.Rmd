@@ -348,7 +348,7 @@ Comprehensive molecular characterization of human colon and rectal cancer.
 
 Barretti söögitoru (BE) areng kartsinoomiks sisaldab TP53 ja CDKN2A mutatsioone ning rekurentseid LOH-e (5q, 9p, 13q, 17p, 18q).
 
-```{r}
+```{r, out.width='70%'}
 knitr::include_graphics("http://www.nature.com/ng/journal/v22/n1/images/ng0599_108.gif")
 ```
 
@@ -461,7 +461,10 @@ Kas vähi arengusse kontributeerivad kõik vähirakud võrdselt või tekivad vä
 
 .pull-left[
 
-<img src="http://www.nature.com/nature/journal/v414/n6859/images/414105ad.2.jpg" style="width:460px" " >
+```{r, out.width='100%'}
+knitr::include_graphics("http://www.nature.com/nature/journal/v414/n6859/images/414105ad.2.jpg")
+```
+
 ]
 
 .pull-right[
@@ -479,11 +482,11 @@ Stem cells, cancer, and cancer stem cells.
 ]
 
 ---
-## Normaalsed rakud on transformatsioonile resitentsed
+## Normaalsed rakud on transformatsioonile resistentsed
 
 .pull-left[
 
-```{r}
+```{r, out.width='100%'}
 knitr::include_graphics("http://www.nature.com/ng/journal/v40/n5/images/ng.115-F1.jpg")
 ```
 
@@ -519,23 +522,29 @@ Seminaalsed katsed 1980.ndatel näitasid, et
 2. **MYC-taolised**: rakutsükli kontrolli *override* tuumas.
 
 ---
-# Kollaboreeruvate onkogeenide näited *in vitro* ja *in vivo*
+## Kollaboreeruvate onkogeenide näited *in vitro* ja *in vivo*
 
-"ras-sarnane" onkogeen|"myc-sarnane" onkogeen| mudel, rakk, organ
-----------------------|----------------------|-------------
-In vitro transformatsioon | |
+```{r}
+tab <- readr::read_delim("'ras-sarnane' onkogeen|'myc-sarnane' onkogeen| mudel, rakk, organ
+In vitro transformatsioon | | 
 ras|myc|transfekteeritud roti embrüo fibroblastid (REF)
 ras|E1A|transfekteeritud roti neerurakud
 ras|SV40 large T| transfekteeritud REF
 Notch-1|E1A| transfekteeritud roti neerurakud
-In vivo tumorigenees| |
+In vivo tumorigenees| | 
 middle T|large T | polüoomiviirus-indutseeritud hiirekasvajad
 mil(=raf)|myc|MH2 linnu leukeemiaviiruse kana tuumorid
 erbB|erbA|linnu erütroblastoosiviiruse kana tuumorid
 pim1|myc|hiire leukeemiaviirus hiire tuumorid
 abl|myc|hiire leukeemiaviirus hiire tuumorid
 Notch-1/2|myc|tüümuse kasvajad transgeenses hiires
-bcl2|myc|follikulaarsed lümfoomid transgeenses hiires
+bcl2|myc|follikulaarsed lümfoomid transgeenses hiires", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", 
+                          position = "left", 
+                          font_size = 14, 
+                          full_width = FALSE)
+```
 
 ---
 ## Inimese rakud on transformatsioonile resistentsed
@@ -543,13 +552,19 @@ bcl2|myc|follikulaarsed lümfoomid transgeenses hiires
 - Erinevalt roti-hiire rakkudest inimese primaarsed rakud koekultuuris spontaanselt ei immortaliseeru.
 - Samuti ei transformeeru inimese rakud lihtsalt kahe onkogeeni sisse viimisel, lisaks on vaja inaktiveerida ka p53 ja pRB (nt. SV40 large T ja small t abil).
 
-Rada | Geen/agent
------|----------
+```{r}
+tab <- readr::read_delim("Rada | Geen/agent
 Ras | ras
 pRb | CDK4/6-D1, SV40 LT, HPV E7
 p53 | DNp53, SV40 LT, HPV E6
 telomeerid | hTERT, myc+SV40 LT
-PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
+PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K", delim = "|")
+tab <- knitr::kable(tab, format = 'html')
+kableExtra::kable_styling(tab, "striped", 
+                          position = "left", 
+                          font_size = 14, 
+                          full_width = FALSE)
+```
 
 - Inimese primaarsete fibroblastide transformeerumine kultuuris saavutati (1)  telomeraasi üle-ekspresiooni, (2) RAS-, (3) MYC-ekspressiooni ja (4) p16INK4a vaigistamise teel ([Drayton et al., 2003](http://www.sciencedirect.com/science/article/pii/S1535610803002423)).
 
@@ -558,7 +573,7 @@ PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
 
 - Põhjus miks inimese ja teiste pikaealiste imetajate rakud on evolutsiooniliselt kujunenud resistentsemaks transformatsioonile tuleneb ilmselt ka sellest, et kui hiire rakud läbivad summaarselt $10^{11}$ mitoosi elu jooksul, siis inimese rakud teevad läbi $10^{16}$ mitoosi.
 
-```{r}
+```{r, out.width='60%'}
 knitr::include_graphics("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwLE4iqmvZ3mKz8b2zVP0S-qV9buPy06NnmEI_tmqLy7ekRqwN")
 ```
 
@@ -568,7 +583,7 @@ knitr::include_graphics("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcT
 - Vähitekke kiiruse määrab stohhastiliste mutatsioonide akumuleerumine, mida võib oluliselt kiirendada ekspositsioon **välistele mutageenidele**.
 - Ka kopsuvähi intsidents sõltub pigem suitsetamise staazist (nn. **paki aastad**) kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
 
-```{r}
+```{r, out.width='60%'}
 knitr::include_graphics("http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg")
 ```
 
@@ -617,21 +632,21 @@ Reddig et al., 2000.
 - Rakud mis limaskesta regenereerudes jagunevad võivad juba kanda suitsetamisest tingitud mutatsioone.
 
 ---
-# Rinnavähk - promootoriks on kehaomane hormoon
+## Rinnavähk - promootoriks on kehaomane hormoon
 
-- Menstruaaltsüklis toimuvad hormonaalsed muutused, millega kaasneb ka rinnanäärme rakkude jagunemine.
-- Epidemioloogiliselt on leitud, et mida rohkem tsükleid naine elu jooksul läbib, seda kõrgem on rinnavähi risk.
-- Naistel kellel saabub menopaus 45 aastaselt on poole väiksem rinnavähi risk kui neil kel menopaus saabub 55+ eluaastast.
-- Munasarjade eemaldamine vähendab rinnavähi riski nulli.
-- Taanis, mitte-Hodgkinsi lümfoomi nais patsientidel, kel saabus kemoteraapiast tingitud menopaus enne 36 eluaastat langes rinnavähi risk 90%.
-- Teisalt, post-menopaussetel naistel kellel tekib rinnavähk on veres keskmiselt 15% kõrgem östrogeeni tase.
+- Menstruaaltsüklis toimuvad hormonaalsed muutused, millega kaasneb ka rinnanäärme rakkude jagunemine
+- Epidemioloogiliselt on leitud, et mida rohkem tsükleid naine elu jooksul läbib, seda kõrgem on rinnavähi risk
+- Naistel kellel saabub menopaus 45 aastaselt on poole väiksem rinnavähi risk kui neil kel menopaus saabub 55+ eluaastast
+- Munasarjade eemaldamine vähendab rinnavähi riski nulli
+- Taanis, mitte-Hodgkinsi lümfoomi nais patsientidel, kel saabus kemoteraapiast tingitud menopaus enne 36 eluaastat langes rinnavähi risk 90%
+- Teisalt, post-menopaussetel naistel kellel tekib rinnavähk on veres keskmiselt 15% kõrgem östrogeeni tase
 
-```{r}
+```{r, out.width='40%'}
 knitr::include_graphics("http://www.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/@clinicalspec/documents/image/mdaw/mtcy/~edisp/menstrual_cycle_ca6-00024543/~renditions/menstrual_cycle_ca6-00024543~9.jpg")
 ```
 
 ---
-# Kroonilised põletikud: HBV ja maksavähk
+## Kroonilised põletikud: HBV ja maksavähk
 
 HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb iga aasta ~500,000 inimest sellesse haigusesse.
 
@@ -647,9 +662,7 @@ HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb
 
 .pull-right[
 
-HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
-
-```{r}
+```{r, out.width='100%', fig.cap='HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.'}
 knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n9/images/nrc1934-f2.jpg")
 ```
 ]
@@ -661,7 +674,7 @@ Farazi & DePinho, 2006.
 ]
 
 ---
-# MALT lümfoomid
+## MALT lümfoomid
 
 - MALT: **g**astric **m**ucosa **a**ssociated **l**ymphoid **t**issue.
 - *Helicobacter pylori* nakkus toimib MALT lümfoomides promootorina.
