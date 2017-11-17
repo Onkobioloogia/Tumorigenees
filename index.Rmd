@@ -1,94 +1,37 @@
 ---
-title       : Mitmeastmeline vähiteke
-subtitle    : Onkobioloogia
-author      : Taavi Päll
-job         : lektor, TTU
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
-highlighter : highlight.js  # {highlight.js, prettify, highlight}
-hitheme     : tomorrow      # 
-widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
-mode        : selfcontained # {standalone, draft}
-knit        : slidify::knit2slides
+title: Mitmeastmeline vähiteke
+subtitle: Onkobioloogia
+author: Taavi Päll
+output: xaringan::moon_reader
 ---
 
-<!-- Limit image width and height -->
-<style type="text/css">
-img {     
-  max-height: 480px;     
-  max-width: 600px; 
-}
-</style>
 
-<style> .title-slide {
-  background-color: #FFFFFF; /*#CBE7A5 #EDE0CF; ; #CA9F9D*/
-}
-
-.title-slide hgroup > h1{
- font-family: 'Oswald', 'Helvetica', sanserif; 
-}
-
-.title-slide hgroup > h1, 
-.title-slide hgroup > h2 {
-  color: #535E43 ;  /* ; #EF5150*/
-}
-</style>
-
-<!-- Center image on slide -->
-<script type="text/javascript" src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
-<script type="text/javascript">
-$(function() {     
-  $("p:has(img)").addClass('centered'); 
-});
-</script>
-
-<!-- Italic -->
-<style>
-em {
-  font-style: italic
-}
-</style>
-
-<!-- Bold -->
-<style>
-strong {
-  font-weight: bold;
-}
-</style>
-
-<style>
-.title-slide {
-background-image:url(assets/img/HNSCC.jpg);
-background-repeat: no-repeat;
-background-position: 0% 15%;
-background-size: 100%;
-background-color: #CBE7A5; /* ; ; */
-}
-</style>
-
-```{r setup, message=FALSE, echo=FALSE}
-library("knitr")
-library("magrittr")
-library("reshape2")
-library("ggplot2")
-library("ggthemes")
-library("plyr"); library("dplyr")
-library("broom")
-library(purrr)
-library(tidyr)
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, message = FALSE, fig.align = 'center', out.width = '80%')
+library(magrittr)
+library(tidyverse)
+library(broom)
+library(reshape2)
+library(ggthemes)
 ```
 
 
---- .segue .dark .nobackground
-## Recap
+---
+class:inverse, middle, center
+
+# Recap
 
 ---
+
 ## Senesents
 
 - Onkogeen indutseeritud senesents on tuumorsuppressor mehhanism mis toimib healoomulised kasvajates.
 - OI senesentsi käivitavad mitogeenne hüperstimulatsioon (RAS, E2F1) ja on tingitud tekkivatest DNA kahjustustest.
 - Rakkude senesentsi võib põhjustada erinevat tüüpi stress.
 
-![stress](http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg)
+```{r}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n6/images/nrc1884-f1.jpg")
+```
 
 ---
 ## Telomeerid ja immortalisatsioon
@@ -100,8 +43,10 @@ library(tidyr)
 - Rakkude immortaliseerimiseks on neis vaja aktiveerida telomeraas.
 - 60-80% inimese vähkidest on telomeraas positiivsed.
 
---- .segue .dark .nobackground
-## Mitmeastmeline vähiteke
+---
+class:inverse, middle, center
+
+# Mitmeastmeline vähiteke
 
 ---
 ## Kasvaja progressioon
@@ -111,17 +56,17 @@ library(tidyr)
 - Kasvaja progressioon põhineb rakkudes järjestikustelt akumuleeruvatel juhuslikel geneetilistel või epigeneetilistel mutatsioonidel rakkude jagunemist, ellujäämist ja muudes pahaloomulist fenotüüpi reguleerivates geenides.
 - Iga järgnev mutatsioon kujutab endast järgmise barjääri murdumist pre-maliigse raku teel pahaloomulise kasvuni.
 
----&twocol
+---
 ## Vähiteke on pikajaline protsess
 
 - USA andmete põhjal on 70 a. mehel 1000 korda kõrgem risk surra käärsoole vähki kui 10 a. poisil.
 - Sporaadiline vähk on vana ea haigus ja sellest lähtuvalt võtab pahaloomulise vähi teke ilmselt aega kümneid aastaid.
 
-***=left
+.pull-left[
 
-```{r uk, echo=FALSE, fig.height=4.5}
-uk <- read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/UKage") %>% 
-  melt(.,id="Vanusegrupp") 
+```{r}
+uk <- read.csv("data/UKage") %>% 
+  melt(id = "Vanusegrupp") 
 uk$Sugu<-"Naised"
 uk$Sugu[grep("Meeste", uk$variable)]<-"Mehed" 
 uk$variable <- gsub("^[MestNai.]{7}","",uk$variable)
@@ -134,10 +79,12 @@ theme(axis.text.x=element_text(angle=90,color="black")) +
   ggtitle(paste(strwrap("Kõik vähid (C00-C97 välja arvatud C44). \nKeskmiselt uusi vähijuhtumeid aastas ja \nintsidents 100000 inimese kohta, UK, 2009-2011.", width = 50), collapse="\n"))  
 ```
 
-***=right
+]
 
-```{r seer, echo=FALSE, fig.height=4.5,fig.width=4}
-seer <- read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/SEER")
+.pull-right[
+
+```{r}
+seer <- read.csv("data/SEER")
 seer %>%  melt(.,id="Vanusegrupp",value.name="intsidents",variable.name = "Sugu") %>%
   ggplot(.,aes(x=Vanusegrupp, y=intsidents, fill=Sugu)) + 
   geom_bar(stat="identity", position="dodge") + 
@@ -147,45 +94,53 @@ seer %>%  melt(.,id="Vanusegrupp",value.name="intsidents",variable.name = "Sugu"
   ggtitle(paste(strwrap("Vanus-korrigeeritud vähi intsidents, USA 2007-2011", width = 20), collapse="\n")) + xlab("")
 ```
 
+]
 
-<footer class="source"> Andmed: Vasakul, 
+.footer[ Andmed: Vasakul, 
 <a href="http://www.cancerresearchuk.org/cancer-info/cancerstats/incidence/age/">
 Cancer Research UK
 </a> ja paremal, 
 <a href="http://seer.cancer.gov/csr/1975_2011/browse_csr.php?sectionSEL=2&pageSEL=sect_02_table.07.html#table1">
 SEER Cancer Statistics Review 1975-2011.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Vähitekke pikaajalisus: suitsetamise mõju kopsuvähi levikule USA-s
 
 
-***=left
-<img src="http://www.nature.com/nrc/journal/v1/n1/images/nrc1001-082a-f3.gif" style="width:340px">
+.pull-left[
+```{r}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v1/n1/images/nrc1001-082a-f3.gif")
+```
 
-***=right
+]
+
+.pull-right[
 
 - Kuni II maailmasõjani oli suitsetamine USA meeste seas vähelevinud.
 - 30-35 aastat hiljem, 1970ndate aastate paiku, hakkas kopsuvähi intsidents järsult tõusma.
 - Praegu on ülemaailmne kopsuvähi suremus ~1.39 miljonit aastas, tipp peaks saabuma 2020-30-ndtate aastate paiku.
 
-<img src="http://picturingtheamericandream.files.wordpress.com/2011/11/swscan01337-copy.jpg" style="width:200px">
+```{r, out.width='50%'}
+knitr::include_graphics("http://picturingtheamericandream.files.wordpress.com/2011/11/swscan01337-copy.jpg")
+```
+]
 
-<footer class="source"> Andmed:
+.footer[ Andmed:
 <a href="http://www.nature.com/nrc/journal/v1/n1/full/nrc1001-082a.html">
 Tobacco and the global lung cancer epidemic.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Vähi suremus on lineaarselt seotud vanusega
 
-***=right
+.pull-left[
 
-```{r globocan, echo=FALSE, message=FALSE, results='asis'}
-eurorate <- read.csv("eurorate.csv") %>% 
-  melt(.,id="Vanusegrupp") %>% 
+```{r, out.width='100%'}
+eurorate <- read.csv("data/eurorate.csv") %>% 
+  melt(.,id = "Vanusegrupp") %>% 
   filter(value > 2 & !variable == "Hodgkin.s.lümfoom")
 cancers <- eurorate  %>%
   group_by(variable) %>%
@@ -196,7 +151,8 @@ cancers <- eurorate  %>%
 ggplot(eurorate, aes(x = Vanusegrupp, y = value)) + 
   geom_point() + 
   facet_wrap(~ variable, scales = "free_y") + 
-  scale_y_log10() + scale_x_log10() + 
+  scale_y_log10() + 
+  scale_x_log10() + 
   scale_x_continuous(breaks = c(25, 50, 75)) +
   geom_smooth(method = "lm", se = FALSE) +
   geom_text(data = cancers, aes(x = 25, y = y, label = paste0("Tõus=", sprintf('%2.1f', slope))), size = 4, hjust = 0) +
@@ -205,22 +161,24 @@ ggplot(eurorate, aes(x = Vanusegrupp, y = value)) +
   ggtitle("WHO EUROPE REGION (EURO) - \nBOTH SEXES ESTIMATED INCIDENCE BY AGE")
 ```
 
-***=left
+]
 
-- Epidemioloogiliselt on vähi suremus lineaarselt seotud vanusega.
+.pull-right[
+
 - Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
 - Selline eksponentsiaalne seos muutujate vahel on Log-log plotil lineaarne. 
 - Keskmine tõus vähi suremuses kui vanus kasvab ühe ühiku kõrvalolevate andmete põhjal on **`r sprintf('%2.1f', prod(cancers$slope)^(1/length(cancers$slope)))`**.
 - Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5 + 1 = **6 sõltumatut sündmust**. 
 
+]
 
-<footer class="source"> Andmed:
+.footer[ Andmed:
 <a href="http://globocan.iarc.fr/Default.aspx">
 GLOBOCAN 2012, IARC - 10.11.2014.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Tee vähi suunas toimub läbi elu
 
 - Soolevähi intsidents tõuseb tugevalt seitsmendal ja kaheksandal eludekaadil.
@@ -229,11 +187,16 @@ GLOBOCAN 2012, IARC - 10.11.2014.
 - Siit nähtub, et **koos vanusega tekib meisse kõigisse paratamatult ka rakke, mis on juba läbinud mingi arvu (kuid mitte kõiki!) vähi tekkeni viivaid astmeid**.
 
 
-```{r sool, echo=FALSE, fig.height=3,fig.width=3}
-read.csv("~/Dropbox/Onkobioloogia/Tumorigenees/eurorate") %>% 
-  melt(.,id="Vanusegrupp") %>% filter(value>2&variable=="Sool") %>%
-ggplot(., aes(x = Vanusegrupp, y = value) ) + geom_line(size=2) + xlim(0, 80) + 
-  xlab("Vanus, aastates") + ylab("Surmasid 100000 inimese kohta") + ggtitle("Soolevähk")
+```{r, out.width='50%'}
+read.csv("data/eurorate.csv") %>% 
+  melt(id = "Vanusegrupp") %>% 
+  filter(value > 2 & variable == "Sool") %>%
+ggplot(aes(Vanusegrupp, value)) + 
+  geom_line(size = 2) + 
+  xlim(0, 80) + 
+  labs(title = "Soolevähk",
+       x = "Vanus, aastates",
+       y = "Surmasid 100000 inimese kohta")
 ```
 
 ---
@@ -242,33 +205,41 @@ ggplot(., aes(x = Vanusegrupp, y = value) ) + geom_line(size=2) + xlim(0, 80) +
 - Inimse mesotelioomide (vasakul, tekib asbesti sisse hingamisel ja suitsetamisest) ja hiire nahavähi (benzo[*a*]püreeniga naha värvimisel) epidemioloogiline analüüs näitab, et **välised kantserogeenid on võimelised vähki indutseerima kindla ajakava alusel**.
 - Ka kopsuvähi intsidents sõltub pigem suitsetamise staazist kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
 
-<img src="http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg" style="width:420px">
+```{r, out.width='60%'}
+knitr::include_graphics("http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg")
+```
 
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.nature.com/nature/journal/v411/n6835/full/411390a0.html">
 Cancer epidemiology in the last century and the next decade.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Somaatiliste mutatsioonide arv inimese vähkides
 
-***=right
+
+.pull-left[
+
+```{r, out.width='60%'}
+knitr::include_graphics("figures/somatic.jpg")
+```
+
+]
+
+.pull-right[
 
 - **Välistest mutageenidest tingitud kasvajad sisaldavad rohkem mutatsioone.**
 - Ülal, mittesünonüümsete mutatsioonide arv tuumori kohta eri paikmetes täiskasvanute ja pediaatriliste vähkide täisgenoomi sekvenerimise andmetel. 
 - All, mittesünonüümsete mutatsioonide mediaan erinevates vähitüüpides. Vurrud näitavad diagrammil 25 ja 75% kvartiile. 
 
+]
 
-<footer class="source"> MSI, microsatellite instability; SCLC, small cell lung cancers; NSCLC, non–small cell lung cancers; ESCC, esophageal squamous cell carcinomas; MSS, microsatellite stable; EAC, esophageal adenocarcinomas. Pilt:
+.footer[ MSI, microsatellite instability; SCLC, small cell lung cancers; NSCLC, non–small cell lung cancers; ESCC, esophageal squamous cell carcinomas; MSS, microsatellite stable; EAC, esophageal adenocarcinomas. Pilt:
 <a href="http://www.sciencemag.org/content/339/6127/1546/F1.large.jpg">
 Number of somatic mutations in representative human cancers.
 </a>
-</footer>
-
-***=left
-
-![mutatsioonid](assets/img/somatic.jpg)
+]
 
 ---
 ## Juhtmutatsioonid ja reisijamutatsioonid
@@ -277,70 +248,81 @@ Number of somatic mutations in representative human cancers.
 - Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
 - Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
 
----&twocol
+---
 ## Juhtmutatsioonid
 
-***=left
+.pull-left[
 
 - Praeguseks on leitud, et eksisteerib umbes [140 geeni](drivers.html) mille mutatsioonid kontributeerivad olulise osa vähkide tekkesse ja arengusse.
 - __*Driver* geenid__ toimivad kümnekonnas signaalirajas ja reguleerivad kolme põhilist rakulist protsessi: **raku diferentseerumine, raku ellujäämine ja genoomi korrashoid**.
 - Iga individuaalne vähk erineb oma geneetiliste muutuste poolest, kuid muutunud signaalirajad on samad.
 
-***=right
+]
 
-![juhid](assets/img/landscape.gif)
+.pull-right[
 
-<footer class="source"> Pilt:
+```{r}
+knitr::include_graphics("figures/landscape.gif")
+```
+
+]
+
+.footer[ Pilt:
 <a href="http://www.sciencemag.org/content/339/6127/1546.full">
 Cancer Genome Landscapes.
 </a>
-</footer>
+]
 
----&twocol
-# Mitmeastmelise vähi histopatoloogia: soolevähk
+---
+## Mitmeastmelise vähi histopatoloogia: soolevähk
 
-![crc](assets/img/CRCstages.jpg)
+```{r, out.width='60%'}
+knitr::include_graphics("figures/CRCstages.jpg")
+```
 
-***=left
+.pull-left[
 - Tuumorid arenevad aja jooksul healoomulisest seisundist kartsinoomideni akumuleerides mutatsioone.
 - Kõige esimene *"gatekeeping"* mutatsioon annab jagunevale normaalsele epiteelirakule selektiivse eelise.
 - Soolevähis toimuvad sellised *gatekeeping* mutatsioonid **APC** geenis (LOH kr. 5q). 
 
-***=right
+]
+
+.pull-right[
 
 - Selline adenoom kasvab aeglaselt, kuid **sekundaarne KRAS mutatsioon** põhjustab teise ringi klonaalse ekspansiooni (kasvu). 
 - Ainult APC mutatsiooni kandvad võivad küll alles jääda, kuid nende arv on väike võrreldes APC-KRAS mutantidega. 
 - Edasised klonaalsed ekspansioonid on seotud mutatsioonidega PIK3CA, SMAD4 (LOH kr. 18q21) ja TP53 (LOH kr. 17p) geenides ning viivad pahaloomulise vähi tekkeni.
+]
 
-
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.sciencemag.org/content/339/6127/1546.full">
 Cancer Genome Landscapes.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Mitmeastmelise kartsenogeneesi mudel, HNSCC
 
-***=left
 
 - Tüvirakk muteerub ja tütarrakkudest moodustub muteerunud rakkude lapike (**patch**).
 - Kahjustatud lapike kasvab ja asendab terves piirkonnas normaalse epiteeli (**field**).
 - Kahjustuse suurenedes tekivad muteerunud subkloonid. 
 - Mõnest divergeerunud kloonist areneb välja invasiivne vähk.
 
-<footer class="source">Allikas:
+
+```{r}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v11/n1/images/nrc2982-f4.jpg")
+```
+
+
+.footer[Allikas:
 <a href="http://cancerres.aacrjournals.org/content/63/8/1727.long#ref-1">
 Braakhuis, 2003
 </a> ja
 <a href="http://www.nature.com/nrc/journal/v11/n1/full/nrc2982.html">
 Leemans, 2011.
 </a>
-</footer>
-
-***=right
-
-<img src="http://www.nature.com/nrc/journal/v11/n1/images/nrc2982-f4.jpg" style="width:500px">
+]
 
 
 ---
@@ -351,26 +333,30 @@ Geneetiliste muutuste jada, mis viib pahaloomulise vähi tekkeni, pole siiski ko
 - Soolevähid küll saavad suure (>80%) tõenäosusega alguse APC geeni mutatsioonidest, kuid edasine areng on stohhastiline.
 - Varieeruvusest annab aimu *driver* geenide mutatsioonisagedused.
 
-![crc2](assets/img/nature11252-f1.2.jpg)
+```{r}
+knitr::include_graphics("figures/nature11252-f1.2.jpg")
+```
 
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.nature.com/nature/journal/v487/n7407/full/nature11252.html">
 Comprehensive molecular characterization of human colon and rectal cancer.
 </a>
-</footer>
+]
 
 ---
 ## Kompleksne klonaalne evolutsioon vähis
 
 Barretti söögitoru (BE) areng kartsinoomiks sisaldab TP53 ja CDKN2A mutatsioone ning rekurentseid LOH-e (5q, 9p, 13q, 17p, 18q).
 
-![BE](http://www.nature.com/ng/journal/v22/n1/images/ng0599_108.gif)
+```{r}
+knitr::include_graphics("http://www.nature.com/ng/journal/v22/n1/images/ng0599_108.gif")
+```
 
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.nature.com/ng/journal/v22/n1/full/ng0599_106.html">
 Barrett et al., 1999.
 </a>
-</footer>
+]
 
 ---
 ## *Field cancerization*, vähiala
@@ -395,25 +381,29 @@ Vähipaikmed, mille puhul on kirjeldatud vähiala efekt ja kus on jälgitav mitm
 - **eesnääre**: 20 a. $\to$ PIN $\ge$10 a. $\to$ latentne vähk 3-15 a. $\to$ vähk. 
 - kusepõis, söögitoru, vagiina, nahk;
 
-<footer class="source">CIS, <em>carcinoma in situ</em>; CIN, <em>cervical intraepithelial neoplasia</em>; DCIS, <em>ductal carcinoma in situ</em>; PIN, <em>prostatic intraepithelial neoplasia</em>.
-</footer>
+.footer[CIS, <em>carcinoma in situ</em>; CIN, <em>cervical intraepithelial neoplasia</em>; DCIS, <em>ductal carcinoma in situ</em>; PIN, <em>prostatic intraepithelial neoplasia</em>.
+]
 
----&twocol
+---
 ## Vähiala soolevähis
 
-***=right
-
-![wiki](http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg/640px-Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg)
-
-***=left
+.pull-left[
 
 Lahti lõigatud värskelt opereeritud käärsoole osa milles on kartsinoom ja neli polüüpi. Diagramm näitab võimalikku defektset ala sooles, mis eelneb vähitekkele ja soodustab vähiteket. Diagrammil on värviga näidatud ka vähi sub- ja sub-subkloonid.
+]
 
-<footer class="source"> Allikas:
+.pull-right[
+
+```{r}
+knitr::include_graphics("http://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg/640px-Image_of_resected_colon_segment_with_cancer_%26_4_nearby_polyps_plus_schematic_of_field_defects_with_sub-clones.jpg")
+```
+]
+
+.footer[ Allikas:
 <a href="http://en.wikipedia.org/wiki/Carcinogenesis">
 Wikipedia.
 </a>
-</footer>
+]
 
 ---
 ## Kasvaja geneetiline heterogeensus
@@ -426,22 +416,26 @@ Wikipedia.
 ---
 ## Topography of cancer subclones
 
-![edel](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f4.2.jpg)
+```{r}
+knitr::include_graphics("http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f4.2.jpg")
+```
 
 a, Tissue section of prostate to detect genetic events: TMPRSS2–ERG fusion (ERG via rearrangement (ERGR)) and PTEN loss. b, The presumed sequence of clonal events.
 
 
 
-<footer class="source"> Allikas:
+.footer[ Allikas:
 <a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
 Clonal evolution in cancer.
 </a>Edel, TMPRSS2–ERG fusion by deletion or split (Esplit). TMPRSS2–ERG fusion by deletion of genomic sequences between the tandemly located TMPRSS2 and ERG gene sequences on chromosome 21. Duplication of the fusion of TMPRSS2 to ERG sequences together with interstitial deletion of sequences 5′ to ERG (called ‘2+Edel’).
-</footer>
+]
 
 ---
 ## Vähi subkloonid
 
-![](https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg)
+```{r}
+knitr::include_graphics("https://www.dovepress.com/cr_data/article_fulltext/s54000/54184/img/fig4.jpg")
+```
 
 ---
 ## Klonaalne evolutsioon vähis
@@ -450,56 +444,65 @@ Clonal evolution in cancer.
 - Vähi ja ümbritseva koe mikrokeskkond tingib selektiivse pressi geneetiliselt heterogeensetele vähikloonidele.
 - Ekspandeeruvad (ja uusi mutatsioone akumuleerivad) ainult need kloonid, millel esinevad antud mikrokeskkonnas jagunemiseks ja ellujäämiseks vajalikud omadused.
 
-![darwin](http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f2.2.jpg)
+```{r}
+knitr::include_graphics("http://www.nature.com/nature/journal/v481/n7381/images/nature10762-f2.2.jpg")
+```
 
-<footer class="source"> Allikas:
+.footer[ Allikas:
 <a href="http://www.nature.com/nature/journal/v481/n7381/full/nature10762.html">
 Clonal evolution in cancer.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Vähi tüvirakud
 
 Kas vähi arengusse kontributeerivad kõik vähirakud võrdselt või tekivad vähirakud kõrge regeneratiivse potentsiaaliga **vähi tüvirakkudest**.
 
-***=right
+.pull-left[
+
+<img src="http://www.nature.com/nature/journal/v414/n6859/images/414105ad.2.jpg" style="width:460px" " >
+]
+
+.pull-right[
 
 - Vähi tüvirakud on vähis olevate rakkude minoorne subpopulatsioon mis on võimelised ennast taastootma ja on tumorigeensed.
 - Vähi tüvirakud on rakulised draiverid, millel põhineb subkloonide ekspansioon.
 - Erinevates kasvajates on tüvirakke erineval hulgal ja erineva fenotüübiga.
 - Ainuke tunnus, mis neil peab olema on enese taastootmine (*self renewal*).
+]
 
-***=left
-
-<img src="http://www.nature.com/nature/journal/v414/n6859/images/414105ad.2.jpg" style="width:460px" " >
-
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.nature.com/nature/journal/v414/n6859/full/414105a0.html">
 Stem cells, cancer, and cancer stem cells.
 </a>
-</footer>
+]
 
----&twocol
+---
 ## Normaalsed rakud on transformatsioonile resitentsed
 
-***=right
+.pull-left[
+
+```{r}
+knitr::include_graphics("http://www.nature.com/ng/journal/v40/n5/images/ng.115-F1.jpg")
+```
+
+<p style="font-size:10pt">Mutant K-Ras, but not mutant N-Ras, promotes hyperplastic growth in the colonic epithelium.</p>
+
+]
+
+.pull-right[
 
 - Immortaliseeritud NIH3T3 rakud transformeerusid H-ras onkogeeniga transfekteerimisel st. piisas justkui ühest aktiveeritud onkogeenist.
 - Tõeliselt primaarsed rakud mis on eraldatud hiirest ja rotist *ras*-i sisse viimisel ei transformeeru.
 - K-ras-i koespetsiifiline ekspressioon hiire sooleepiteelis põhjustab ainult sooleepiteeli muutumise hüperplastiliseks (kõrval olev pilt).
+]
 
-***=left
-
-<img src="http://www.nature.com/ng/journal/v40/n5/images/ng.115-F1.jpg" style="width:400px" >
-
-<p style="font-size:10pt">Mutant K-Ras, but not mutant N-Ras, promotes hyperplastic growth in the colonic epithelium.</p>
-
-<footer class="source"> Pilt:
+.footer[ Pilt:
 <a href="http://www.nature.com/ng/journal/v40/n5/full/ng.115.html">
 Haigis et al., 2008.
 </a>
-</footer>
+]
 
 ---
 ## Transformatsiooniks on vaja vähemalt kahte mutantset geeni
@@ -555,7 +558,9 @@ PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
 
 - Põhjus miks inimese ja teiste pikaealiste imetajate rakud on evolutsiooniliselt kujunenud resistentsemaks transformatsioonile tuleneb ilmselt ka sellest, et kui hiire rakud läbivad summaarselt $10^{11}$ mitoosi elu jooksul, siis inimese rakud teevad läbi $10^{16}$ mitoosi.
 
-![whale](https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwLE4iqmvZ3mKz8b2zVP0S-qV9buPy06NnmEI_tmqLy7ekRqwN)
+```{r}
+knitr::include_graphics("https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTwLE4iqmvZ3mKz8b2zVP0S-qV9buPy06NnmEI_tmqLy7ekRqwN")
+```
 
 ---
 ## Vähitekke tempo lähtub mutatsioonikiirusest
@@ -563,38 +568,44 @@ PP2A | SV40 small t, myc, Akt/PKB+Rac1, PI3K
 - Vähitekke kiiruse määrab stohhastiliste mutatsioonide akumuleerumine, mida võib oluliselt kiirendada ekspositsioon **välistele mutageenidele**.
 - Ka kopsuvähi intsidents sõltub pigem suitsetamise staazist (nn. **paki aastad**) kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
 
-<img src="http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg" style="width:420px">
+```{r}
+knitr::include_graphics("http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg")
+```
 
 
 ---
 ## Hiire naha kartsinogenees
 
-![mouse skin carcinogenesis](assets/img/mouse_skin_model.png)
+```{r}
+knitr::include_graphics("figures/mouse_skin_model.png")
+```
 
-<footer class="source">Pildid: Wikipedia, Nature Medicine.
-</footer>
+.footer[Pildid: Wikipedia, Nature Medicine.
+]
 
----&twocol
+---
 ## Vähiteke ja mittemutageensed promootorid
 
-***=right
+.pull-left[
+
+<img src="http://cancerres.aacrjournals.org/content/60/3/595/F5.large.jpg" style="width:440px" >
+]
+
+.pull-right[
 
 - Hiire nahavähi tekkeks ei piisa ainult mutageeni (**DMBA**) pintseldamisest nahale.
 - Samuti ei piisa nahavähi (papilloomide) tekkeks ainult põletikulise toimega **TPA/PMA** pintseldamisest.
 - Mittepüsivad papilloomid tekivad hiire nahale alles siis kui kõigepealt pintseldatakse DMBA-ga ja seejärel mitmekordselt TPA-ga.
 - Kui püsivaid papilloome pintseldati veelkord DMBA-ga (teistkordne mutagenees) arenes välja kartsinoom.
+]
 
-***=left
-
-<img src="http://cancerres.aacrjournals.org/content/60/3/595/F5.large.jpg" style="width:440px" >
-
-<footer class="source">
+.footer[
 DMBA, 7,12-dimetüülbenz[a]antratseen; TPA, 12-O-tetradekanoüülforbool-13-atsetaat (PMA, phorbol 12-müristaat 13-atsetaat). TPA toimib diatsüülglütserooli (DAG) analoogina ja aktiveerib PKC erinevaid isovorme.
 Pilt: 
 <a href="http://cancerres.aacrjournals.org/content/60/3/595.full">
 Reddig et al., 2000. 
 </a>
-</footer>
+]
 
 
 ---
@@ -615,14 +626,16 @@ Reddig et al., 2000.
 - Taanis, mitte-Hodgkinsi lümfoomi nais patsientidel, kel saabus kemoteraapiast tingitud menopaus enne 36 eluaastat langes rinnavähi risk 90%.
 - Teisalt, post-menopaussetel naistel kellel tekib rinnavähk on veres keskmiselt 15% kõrgem östrogeeni tase.
 
-<img src="http://www.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/@clinicalspec/documents/image/mdaw/mtcy/~edisp/menstrual_cycle_ca6-00024543/~renditions/menstrual_cycle_ca6-00024543~9.jpg" style="width:150px">
+```{r}
+knitr::include_graphics("http://www.healthcare.siemens.com/siemens_hwem-hwem_ssxa_websites-context-root/wcm/idc/groups/public/@global/@clinicalspec/documents/image/mdaw/mtcy/~edisp/menstrual_cycle_ca6-00024543/~renditions/menstrual_cycle_ca6-00024543~9.jpg")
+```
 
----&twocol
+---
 # Kroonilised põletikud: HBV ja maksavähk
 
 HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb iga aasta ~500,000 inimest sellesse haigusesse.
 
-***=left
+.pull-left[
 
 - HBV valk HBx on küll hiires tumorigeenne (HCC tekib 13 kuu pärast, myc+HBx HCC 6 kuu pärast). 
 - HBV nakkus on sünergiline *Aspergillus* e aflatoksiin B1-ga. Aflatoksiin on tugevalt mutageenne.
@@ -630,17 +643,22 @@ HBV krooniline nakkus põhjustab 80% maksakasvajatest (HCC) ja globaalselt sureb
 - Aflatoksiini sisaldava toidu söömine tõstab riski 3 korda.
 - Mõlema koostoimes tõuseb HCC risk 60 korda!
 
-***=right
+]
+
+.pull-right[
 
 HBV põhjustatud krooniline põletik on üks peamisi HCC põhjustajaid.
 
-<img src="http://www.nature.com/nrc/journal/v6/n9/images/nrc1934-f2.jpg" style="width:400px">
+```{r}
+knitr::include_graphics("http://www.nature.com/nrc/journal/v6/n9/images/nrc1934-f2.jpg")
+```
+]
 
-<footer class="source">Pilt: 
+.footer[Pilt: 
 <a href="http://www.nature.com/nrc/journal/v6/n9/full/nrc1934.html">
 Farazi & DePinho, 2006. 
 </a>
-</footer>
+]
 
 ---
 # MALT lümfoomid
@@ -650,13 +668,15 @@ Farazi & DePinho, 2006.
 - 75% MALT lümfoome on võimalik ravida antibiootikumidega.
 - 25% on muutunud promootor-sõltumatuks ja ei vasta enam antibootikumidele. Ilmselt tingituna MALT lümfoomides sagedasele  t(11;18) translokatsioonile, mille tagajärjel tekib fuusion onkovalk API2-MLT MALT1 C-terminusest ja c-IAP2 N-terminusest.
 
---- .segue .dark .nobackground
+---
+class:inverse, middle, center
 
 ## Lingid teistele loengutele
 
---- &twocol 
+---
+class:inverse, middle
 
-***=left 
+.pull-left[ 
 
 - [Sissejuhatav loeng](http://tpall.github.io/onkobioloogia)
 - [Viirused ja onkogeenid](http://tpall.github.io/viirused-ja-onkogeenid)
@@ -665,7 +685,9 @@ Farazi & DePinho, 2006.
 - [Tuumorsupressorgeenid](http://tpall.github.io/Tuumorsupressorid)
 - [Rakutsüklikontroll](http://tpall.github.io/Rakutsyklikontroll)
 
-***=right 
+]
+
+.pull-right[ 
 
 - [p53 ja apoptoos](http://tpall.github.io/p53-ja-apoptoos)
 - [Immortalisatsioon](http://tpall.github.io/Immortalisatsioon)
@@ -675,3 +697,8 @@ Farazi & DePinho, 2006.
 - [Metastaasid](http://tpall.github.io/Metastaas)
 - [Immuunsus](http://tpall.github.io/Immuunsus)
 - [Vähiravimid](http://tpall.github.io/Vahiravim)
+
+]
+
+GitHub: [tpall/Tumorigenees](https://github.com/tpall/Tumorigenees) 
+
