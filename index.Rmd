@@ -167,8 +167,8 @@ ggplot(eurorate, aes(x = Vanusegrupp, y = value)) +
 
 .pull-right[
 
-- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab enne aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
-- Selline eksponentsiaalne seos muutujate vahel on Log-log plotil lineaarne. 
+- Kui sündmuse tõenäosus on $a^n$, siis sellise sündmuse toimumiseks peab aset leidma *n+1* juhuslikku sündmust suhteliselt sarnaste ajaliste vahedega.
+- Selline seos muutujate vahel on Log-log skaalas lineaarne. 
 - Keskmine tõus vähi suremuses kui vanus kasvab ühe ühiku kõrvalolevate andmete põhjal on **`r sprintf('%2.1f', prod(cancers$slope)^(1/length(cancers$slope)))`**.
 - Siit nähtub, et pahaloomulise vähi tekkeks on vaja keskmiselt 5 + 1 = **6 sõltumatut sündmust**. 
 
@@ -205,7 +205,7 @@ ggplot(aes(Vanusegrupp, value)) +
 ## Osa vähke ei sõltu vanusest
 
 - Inimse mesotelioomide (vasakul, tekib asbesti sisse hingamisel ja suitsetamisest) ja hiire nahavähi (benzo[*a*]püreeniga naha värvimisel) epidemioloogiline analüüs näitab, et **välised kantserogeenid on võimelised vähki indutseerima kindla ajakava alusel**.
-- Ka kopsuvähi intsidents sõltub pigem suitsetamise staazist kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
+- Ka kopsuvähi intsidents sõltub pigem suitsetamise staazhist kui vanusest ja suitsetamise maha jätmisel risk enam ei suurene. 
 
 ```{r, out.width='60%'}
 knitr::include_graphics("http://www.nature.com/nature/journal/v411/n6835/images/411390ac.2.jpg")
@@ -247,8 +247,10 @@ Number of somatic mutations in representative human cancers.
 ## Juhtmutatsioonid ja reisijamutatsioonid
 
 - **Mutatsioonid, mis annavad tulevasele vähirakule selektiivse eelise nimetatakse juht- või draivermutatsioonideks (*driver*).**
+
 - Enamus mutatsioone (>99.9%), mis vähis tekivad ei oma selektiivset tähtsust ja lihtsalt kanduvad "reisijatena" (*passenger*) edasi (sh. punktmutatsioonid, koopiarvu muutused, translokatsioonid ja epigeneetilised muutused üle terve genoomi).
-- Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi ($>10^9$ rakku) tekkeni.
+
+- Iga juhtmutatsioon annab tulevasele vähirakule lisa 0.4% suuruse tõusu jagunemise ja apoptoosi vahekorras, mis ühe-kahe jagunemise korral nädalas viib aastate jooksul suure vähimassi (>10^9 rakku) tekkeni.
 
 ---
 ## Juhtmutatsioonid
@@ -410,7 +412,8 @@ Wikipedia.
 ---
 ## Kasvaja geneetiline heterogeensus
 
-- Kasvajasisene geneetiline heterogeensus peamine mehhanism, millel põhineb vähi progressioon ja ravimiresistentsus. 
+- Kasvajasisene geneetiline heterogeensus peamine mehhanism, millel põhineb vähi progressioon ja ravimiresistentsus.
+
 - Kaks alternatiivset hüpoteesi heterogeensuse kohta:
     - klonaalne evolutsioon vähis, 
     - vähi tüvirakkude hüpotees.
@@ -514,7 +517,9 @@ Haigis et al., 2008.
 
 Seminaalsed katsed 1980.ndatel näitasid, et
 - Polüoomiviiruse onkogeenid *large T* ja *middle T* olid siiski võimelised hiire primaarseid rakke immortaliseerima (LT) ja transformeerima (MT).
+
 - Roti embrüo fibroblastid transformeerusid ainult *myc* ja *ras* koostransfekteerimisel, mitte aga kummagagi eraldi.
+
 - Inimese promüelotsüütses leukeemias oli olemas nii aktiveeritud N-ras kui *myc*.
 
 ---
