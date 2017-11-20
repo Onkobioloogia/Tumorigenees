@@ -84,7 +84,8 @@ seer %>%  melt(.,id="Vanusegrupp",value.name="intsidents",variable.name = "Sugu"
   scale_fill_colorblind() +
   scale_x_discrete(limits=rev(levels(seer$Vanusegrupp))) +
   theme(axis.text.x=element_text(angle=90,color="black")) +
-  ggtitle(paste(strwrap("Vanus-korrigeeritud vähi intsidents, USA 2007-2011", width = 20), collapse="\n")) + xlab("")
+  ggtitle("Vanus-korrigeeritud vähi intsidents, USA 2007-2011") + 
+  xlab("")
 ```
 
 ]
