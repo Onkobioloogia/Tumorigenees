@@ -50,14 +50,6 @@ class:inverse, middle, center
 # Mitmeastmeline vähiteke
 
 ---
-## Kasvaja progressioon
-
-- Pahaloomulise vähi teke on pikaajaline protsess, mis tavaliselt võtab aega aastakümneid.
-- Protsessi mille jooksul normaalsed rakud omandavad järk-järguliselt neoplastilise fenotüübi nimetatakse **vähi/tuumori/kasvaja progressiooniks**.
-- Kasvaja progressioon põhineb rakkudes järjestikustelt akumuleeruvatel juhuslikel geneetilistel või epigeneetilistel mutatsioonidel rakkude jagunemist, ellujäämist ja muudes pahaloomulist fenotüüpi reguleerivates geenides.
-- Iga järgnev mutatsioon kujutab endast järgmise barjääri murdumist pre-maliigse raku teel pahaloomulise kasvuni.
-
----
 ## Vähiteke on pikajaline protsess
 
 - USA andmete põhjal on 70 a. mehel 1000 korda kõrgem risk surra käärsoole vähki kui 10 a. poisil.
@@ -105,6 +97,14 @@ Cancer Research UK
 SEER Cancer Statistics Review 1975-2011.
 </a>
 ]
+
+---
+## Kasvaja progressioon
+
+- Pahaloomulise vähi teke võtab aega aastakümneid.
+- Protsessi mille jooksul normaalsed rakud omandavad järk-järguliselt neoplastilise fenotüübi nimetatakse **vähi/tuumori/kasvaja progressiooniks**.
+- Kasvaja progressioon põhineb rakkudes järjestikustelt akumuleeruvatel juhuslikel geneetilistel või epigeneetilistel mutatsioonidel rakkude jagunemist, ellujäämist ja muudes pahaloomulist fenotüüpi reguleerivates geenides.
+- Iga järgnev mutatsioon kujutab endast järgmise barjääri murdumist pre-maliigse raku teel pahaloomulise kasvuni.
 
 ---
 ## Vähitekke pikaajalisus: suitsetamise mõju kopsuvähi levikule USA-s
